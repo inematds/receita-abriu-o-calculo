@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>La Receita abrió el cálculo del nuevo impuesto: la misma compra da R$ 56,76 o R$ 72,88</title>
+<meta content="Explicación gratuita (no oficial): la Receita Federal de Brasil abrió el programa que calcula la CBS, el IBS y el Impuesto Selectivo. La misma compra con una CBS del 8,8% y del 11,3%, la cronología de noviembre de 2026 y lo que cambia para ti." name="description"/>
+<meta content="¿Cuánto de tu dinero se destina al nuevo impuesto? La Receita abrió el cálculo" property="og:title"/>
+<meta content="La misma compra calculada en el programa de la Receita: R$ 56,76 o R$ 72,88 de CBS. La diferencia es la alícuota que el Senado aún debe decidir." property="og:description"/>
+<meta content="https://inematds.github.io/receita-abriu-o-calculo/guia/assets/notas-es.jpg" property="og:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#FACC15; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    --fill:#FACC15; --tint:rgba(250,204,21,.12); --ok:#7CE0C6; --bad:#F0918A;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#a16207; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    --fill:#FACC15; --tint:#FEF9C3; --ok:#0E6B55; --bad:#A83426;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  body.light pre .k{color:#f0c070}
+  body.light nav{background:rgba(246,247,249,.85)}
+  body.light .amb{color:var(--txt);background:linear-gradient(transparent 55%,#FACC15 55%)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  body.light main a:not(.btn),body.light footer a{color:#854d0e;text-decoration:underline;text-decoration-color:#FACC15;text-decoration-thickness:3px}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  p code,li code,td code{font-size:.9em;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:.05em .35em}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb);white-space:nowrap}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:var(--tint)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--fill);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  nav .links a.sec{white-space:nowrap}
+  @media(max-width:1360px){nav .links a.opt{display:none}}
+  @media(max-width:860px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(250,204,21,.18),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.15rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:44ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:66ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.95rem;margin:0}
+  .card p+p{margin-top:.6em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0;margin:.4em 0 0}
+  pre .c{color:#7d7d8a} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:28px}
+  .step>div{min-width:0}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--fill);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .5em}
+  .quem{display:inline-block;font-family:Sora;font-size:.75rem;letter-spacing:.06em;color:var(--txt);background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:.1em .7em;margin-left:.5em;vertical-align:middle;font-weight:600}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+  /* números */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  @media(max-width:720px){.stats{grid-template-columns:1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .stat b{display:block;font:800 clamp(1.9rem,4vw,2.6rem)/1.05 Sora,sans-serif;letter-spacing:-.02em;color:var(--amb)}
+  body.light .stat b{color:var(--txt)}
+  .stat span{display:block;color:var(--mut);font-size:.93rem;margin-top:.5em}
+  .fonte{font-size:.86rem;color:var(--mut);margin-top:14px;max-width:80ch}
+  /* trocas */
+  .troca{display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+  .troca:first-of-type{border-top:none}
+  .troca .n{width:64px;height:64px;border-radius:14px;border:1px solid var(--line);background:var(--card);display:flex;align-items:center;justify-content:center;font:800 1.6rem Sora,sans-serif;color:var(--amb)}
+  body.light .troca .n{color:var(--txt);background:var(--fill);border-color:var(--fill)}
+  .troca h3{font-size:1.3rem;margin-bottom:.35em}
+  .troca p{margin:.35em 0;max-width:72ch}
+  .troca .ex{margin-top:.8em;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--fill);border-radius:10px;padding:12px 16px;font-size:.95rem;color:var(--mut);max-width:76ch}
+  .troca .ex b{color:var(--txt)}
+  @media(max-width:540px){.troca{grid-template-columns:1fr}}
+  /* tres finales */
+  .vs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;max-width:900px}
+  @media(max-width:720px){.vs{grid-template-columns:1fr}}
+  .vs div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:.93rem}
+  .vs strong{display:block;font-family:Sora;margin-bottom:.25em}
+  .vs .r{display:block;margin-top:.5em;font-weight:600}
+  .vs .r.bad{color:var(--bad)} .vs .r.ok{color:var(--ok)}
+  .card ul{margin:8px 0 0;padding-left:20px}.card li{margin:5px 0}
+  /* prueba */
+  .prova{background:var(--card);border:1px solid var(--amb);border-radius:16px;padding:26px 26px 22px;margin-top:6px}
+  body.light .prova{border-color:#EAB308}
+  .tl{list-style:none;margin:0;padding:0;counter-reset:t}
+  .tl li{position:relative;padding:0 0 18px 48px;counter-increment:t}
+  .tl li::before{content:counter(t);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:10px;background:var(--fill);color:#1a1206;font:800 .95rem/32px Sora,sans-serif;text-align:center}
+  .tl li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
+  .tl li:last-child::after{display:none}
+  .tl b{font-family:Sora}
+  blockquote{margin:6px 0 0;padding:14px 18px;border-left:3px solid var(--fill);background:var(--bg2);border-radius:0 10px 10px 0;font-size:1.02rem}
+  .prova .rod{font-size:.86rem;color:var(--mut);margin-top:14px}
+  /* parte técnica */
+  .techhead{background:var(--bg2);border-top:3px solid var(--fill);padding:58px 0 8px}
+  .techhead h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em;margin:.3em 0 0}
+  .techhead .sub{color:var(--mut);margin:.6em 0 1.2em;max-width:66ch}
+  .techzone{background:var(--bg2)}
+  .techzone .card{background:var(--card)}
+  .tbl{width:100%;border-collapse:collapse;font-size:.93rem}
+  .tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl th{font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  @media(max-width:600px){.tbl thead{display:none} .tbl tr{display:block;border-bottom:1px solid var(--line);padding:6px 0} .tbl tr:last-child{border-bottom:none} .tbl td{display:block;border:none;padding:4px 14px}}
+  /* fuente oficial */
+  .fonteof{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:0 0 18px}
+  .fonteof .logo{background:#fff;border-radius:10px;padding:6px 10px;display:flex;align-items:center;gap:8px;flex:none}
+  .fonteof .logo img{height:46px;width:auto;display:block}
+  .fonteof .logo span{font:800 .95rem/1.1 Sora,sans-serif;color:#003470}
+  .fonteof p{margin:0;font-size:.95rem;flex:1;min-width:220px}
+  .fonteof small{display:block;color:var(--mut);font-size:.85rem}
+  .proj{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;background:var(--card);border:1px solid var(--amb);border-radius:16px;padding:22px}
+  body.light .proj{border-color:#EAB308}
+  .proj img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+  .proj h3{font-size:1.3rem;margin-bottom:.4em}
+  .proj p{color:var(--mut);margin:.4em 0}
+  @media(max-width:720px){.proj{grid-template-columns:1fr}}
+  .conta{font-size:1.05rem;max-width:76ch}
+  .conta li{margin:6px 0}
+</style>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top"><span class="emoji">🧾</span> La Receita abrió el cálculo</a>
+<span class="sep">|</span>
+<span class="clubpro">
+<a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+<span class="sep">-</span>
+<a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+</span>
+<div class="links">
+<a class="sec" href="#notas">Los dos cálculos</a>
+<a class="sec" href="#acontecendo">Qué está pasando</a>
+<a class="sec opt" href="#voce">Para ti</a>
+<a class="sec" href="#comecar">Compruébalo tú mismo</a>
+<a class="sec opt" href="#base">Fuentes</a>
+<span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
+<button aria-label="Cambiar tema" class="tgl" id="themeToggle" title="Cambiar tema">🌙</button>
+<a class="btn" href="https://github.com/inematds/receita-abriu-o-calculo" rel="noopener" target="_blank">GitHub</a>
+</div>
+</div></nav>
+<header class="hero" id="top">
+<div class="glow"></div>
+<div class="wrap">
+<div>
+<span class="chip">Explicación · fuente: Receita Federal · contenido de INEMA, no oficial</span>
+<h1>¿Cuánto de tu dinero se destina al nuevo impuesto? <span class="amb">La Receita abrió el cálculo</span></h1>
+<p class="lead">En enero de 2027 comienza la CBS, el impuesto federal que estará incluido en el precio de lo que compras. En noviembre, la Receita Federal publicó el programa que ella misma usa para hacer este cálculo. Procesamos la misma compra dos veces y obtuvimos <strong>R$ 56,76</strong> y <strong>R$ 72,88</strong>. La diferencia está en la alícuota, que el Senado aún debe decidir.</p>
+<div class="cta">
+<a class="btn" href="#notas">Ver los dos cálculos</a>
+<a class="btn ghost" href="#acontecendo">Qué está pasando</a>
+</div>
+</div>
+<figure><img alt="La misma compra, dos cálculos del nuevo impuesto: CBS de R$ 56,76 con una alícuota del 8,8% y R$ 72,88 con el 11,3%" src="../assets/notas-es.jpg"/></figure>
+</div>
+</header>
+<main>
+<section class="resumo" id="resumo"><div class="wrap">
+<div class="fonteof">
+<a class="logo" href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank" title="Noticia de la Receita Federal"><img alt="Logotipo de la Receita Federal" src="../assets/receita-logo.svg"/></a>
+<p><strong>Fuente oficial:</strong> <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">"La Receita Federal publica su primer código fuente abierto en GitHub" (en portugués)</a>, noticia del 16/11/2026.<small>El logotipo está aquí solo para mostrar de dónde viene la noticia. Esta página es de INEMA: no es de la Receita, y la Receita no la ha revisado ni la respalda.</small></p>
+</div>
+<span class="chip">En una frase</span>
+<p><strong>La Receita Federal abrió para todos el programa que calcula los nuevos impuestos de la reforma tributaria</strong>: la CBS (federal, en lugar del PIS y la Cofins), el IBS (de los estados y municipios) y el Impuesto Selectivo (que grava las bebidas, los cigarrillos y otros productos). Antes, este cálculo quedaba dentro de los sistemas de las empresas y nadie de fuera podía verlo. Ahora cualquier persona puede descargarlo, ejecutarlo y comprobarlo. Esta página explica qué pasó en noviembre, muestra la misma compra calculada con las dos alícuotas propuestas y cuenta qué cambia para ti. Solo tienes que leer; quien quiera ejecutar el cálculo encontrará el camino en <a href="#comecar">«Compruébalo tú mismo»</a>.</p>
+</div></section>
+<section id="notas"><div class="wrap">
+<span class="chip">Los dos cálculos</span>
+<h2>La misma compra, <span class="amb">R$ 16,12 de diferencia</span></h2>
+<p class="sub">Tomamos el ejemplo que la propia Receita publica en la documentación del programa y lo ejecutamos dos veces, cambiando solo un número: la alícuota de la CBS.</p>
+<div class="grid g2">
+<div class="card"><h3>🧾 Cálculo A: CBS del 8,8% → R$ 56,76</h3><p>Es la alícuota que la Receita usó en el ejemplo de la documentación. Sirve para probar el programa; <strong>no es una propuesta</strong> de alícuota. El total coincide con lo que publica la documentación oficial.</p></div>
+<div class="card"><h3>🧾 Cálculo B: CBS del 11,3% → R$ 72,88</h3><p>Es la alícuota de referencia que el TCU (Tribunal de Cuentas de la Unión) calculó para 2027 y envió al Senado. <strong>Aún no ha sido aprobada.</strong> Con ella, la CBS de la misma compra aumenta un 28%.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>🔎 Qué muestra el cálculo, artículo por artículo</h3><ul class="conta">
+<li><strong>Arroz de la canasta básica (R$ 100):</strong> CBS cero en los dos cálculos. La ley establece una reducción del 100% para la canasta básica, así que la alícuota no importa.</li>
+<li><strong>Cerveza (R$ 150):</strong> primero se aplica el Impuesto Selectivo (R$ 15), y la CBS se calcula sobre R$ 165. El resultado es R$ 14,52 o R$ 18,64.</li>
+<li><strong>Matrícula escolar (R$ 1.200):</strong> la educación tiene una reducción del 60% en la alícuota. El resultado es R$ 42,24 o R$ 54,24. El programa explica el motivo en portugués y cita el artículo de la ley (Art. 129).</li>
+<li><strong>Carne con el código de producto equivocado:</strong> el programa no calcula e indica que el código no coincide con la clasificación. Es el tipo de error que, en una factura real, haría que la factura fuera rechazada.</li>
+</ul>
+<p class="fonte">La base de la compra es R$ 1.465,00. En los dos cálculos también se suman R$ 0,64 de IBS, que en 2027 es solo una prueba del 0,1%. Lo ejecutamos el 23/11/2026 con la versión 1.7.2 del programa de la Receita.</p></div>
+</div></section>
+<!-- VIDEO: entra o explicavideo do projeto quando publicado (seção #video com embed 16:9) -->
+<section id="acontecendo"><div class="wrap">
+<span class="chip">Qué está pasando</span>
+<h2>Noviembre de 2026, <span class="amb">en orden</span></h2>
+<p class="sub">La reforma tributaria (Ley Complementaria 214/2025) reemplaza cinco impuestos al consumo por tres nuevos, de forma gradual, hasta 2033. El primer gran paso llega en enero. Verificado el 24/11/2026.</p>
+<div class="prova">
+<ol class="tl">
+<li><b>28/10 · El TCU calcula la alícuota: 11,3%</b><br/><span class="mut">El cálculo detallado dio 11,3468%, redondeado a 11,3%. Es la alícuota de referencia: la cifra que iguala la nueva recaudación con la del PIS y la Cofins.</span></li>
+<li><b>09/11 · La Receita publica las API de cálculo de la CBS</b><br/><span class="mut">Los canales por los que los sistemas de las empresas enviarán los débitos y créditos del nuevo impuesto.</span></li>
+<li><b>10/11 · El estudio del TCU llega al Senado</b><br/><span class="mut">El Senado fija la alícuota de referencia mediante una resolución, antes del 15 de diciembre.</span></li>
+<li><b>12 y 13/11 · Una orden autoriza la apertura del código</b><br/><span class="mut">La Orden Cotec n.º 342 se publica en el Diario Oficial: libera tres programas con licencia libre (MIT), registra la «huella digital» de cada versión y advierte que no hay soporte y que el código no tiene fuerza de ley.</span></li>
+<li><b>16/11 · La Receita anuncia el código abierto en GitHub</b><br/><span class="mut">GitHub es el sitio donde los programadores guardan y comparten código. Ahora cualquiera puede ver las versiones y el historial, y señalar errores.</span></li>
+<li><b>17/11 · Hacienda habla de una tasa efectiva media del 8,5%</b><br/><span class="mut">Es otra cifra: el promedio de lo que realmente se paga después de las reducciones. No significa que todos los precios cambien un 8,5%.</span></li>
+<li><b>18/11 · El Senado pide al TCU la metodología</b><br/><span class="mut">La Comisión de Asuntos Económicos aprobó una solicitud para consultar los estudios que respaldan el 11,3%. Especialistas presentaron estimaciones más bajas.</span></li>
+<li><b>19 y 20/11 · El programa ya tiene nuevas versiones</b><br/><span class="mut">Una corrección del redondeo: antes, el total de la factura podía no coincidir con la suma de los artículos. Es una prueba de que el código activo se corrige públicamente.</span></li>
+<li><b>Hasta el 15/12 · El Senado decide la alícuota</b><br/><span class="mut">Cuando se anuncie, el cálculo B (u otro) dejará de ser una simulación.</span></li>
+<li><b>Enero de 2027 · Comienza la CBS</b><br/><span class="mut">En lugar del PIS y la Cofins. El IBS solo entra como prueba del 0,1%, y comienza a aplicarse el Impuesto Selectivo.</span></li>
+</ol>
+</div>
+</div></section>
+<section id="voce"><div class="wrap">
+<span class="chip">Para ti</span>
+<h2>Qué cambia <span class="amb">para tu bolsillo y tu trabajo</span></h2>
+<div class="grid g2">
+<div class="card"><h3>🛒 Quien compra</h3><p>La CBS no es un impuesto adicional sobre todo: reemplaza al PIS y la Cofins, que ya están incluidos en los precios. Lo que cambia es el importe, y depende de la alícuota que fije el Senado y de las reducciones para cada producto, como las del arroz y la escuela en los cálculos de arriba.</p></div>
+<div class="card"><h3>🏢 Quien vende o tiene una empresa</h3><p>El sistema que emite tus facturas debe calcular correctamente a partir de enero. Ahora puedes comprobarlo: compara la misma venta en tu sistema y en el programa de la Receita, y verifica si el importe coincide.</p></div>
+<div class="card"><h3>📒 Contador</h3><p>Una segunda opinión independiente del sistema del cliente, con el motivo explicado y el artículo de la ley. Útil para elaborar informes y explicar al cliente por qué dio ese resultado.</p></div>
+<div class="card"><h3>💻 Quien desarrolla sistemas</h3><p>La referencia oficial para probar tu propio código. Puedes usar la licencia MIT, pero no el nombre de la Receita para afirmar que el producto es oficial.</p></div>
+</div>
+</div></section>
+<section id="comecar"><div class="wrap">
+<span class="chip">Compruébalo tú mismo</span>
+<h2>¿Quieres ejecutar el cálculo <span class="amb">con tus ventas</span>?</h2>
+<p class="sub">Preparamos un kit gratuito, <strong>Calculadora abierta</strong>, que pone en marcha el programa de la Receita en tu computadora. Pídele a tu IA (Claude Code o Codex) que lea el kit; ejecutará el ejemplo de arriba y luego lo comparará con el cálculo de tu sistema.</p>
+<div class="proj">
+<a href="https://inematds.github.io/calculadora-da-reforma/guia/es/" rel="noopener" target="_blank"><img alt="Calculadora abierta: comprueba si tu sistema calcula correctamente la CBS y el IBS" loading="lazy" src="../assets/calculadora-es.jpg"/></a>
+<div>
+<h3>🧮 Calculadora abierta: la prueba del motor oficial</h3>
+<p>La guía explica, en un lenguaje sencillo, cómo pedirle a la IA que ponga en marcha la calculadora, ejecute los dos cálculos y los compare artículo por artículo con tu sistema, marcando «igual» o «diferente».</p>
+<p>También puedes mostrársela a tu equipo de TI o al proveedor del sistema de facturación.</p>
+<p style="margin-top:14px"><a class="btn" href="https://inematds.github.io/calculadora-da-reforma/guia/es/" rel="noopener" target="_blank">Abrir la guía de Calculadora abierta</a></p>
+</div>
+</div>
+<div class="card" style="margin-top:16px"><h3>🌐 Sin instalar nada: la calculadora en línea de la Receita</h3><p>La Receita mantiene la misma calculadora en un sitio web, sin inicio de sesión. El 24/11/2026 funcionaba con la versión 1.7.2, la misma del código abierto. Allí calculas una venta a la vez, y lo que escribes va al sitio de la Receita.</p><p style="margin-top:12px"><a class="btn ghost" href="https://piloto-cbs.tributos.gov.br/servico/calculadora-consumo/calculadora" rel="noopener" target="_blank">Abrir la calculadora en línea de la Receita (en portugués)</a></p></div>
+</div></section>
+<section id="base"><div class="wrap">
+<span class="chip">Fuentes</span>
+<h2>De dónde viene <span class="amb">cada dato</span></h2>
+<p class="sub">El código es de la Receita Federal, desarrollado con Serpro, la empresa tecnológica del gobierno federal. Las explicaciones y los cálculos de esta página son de INEMA, sin relación con la Receita.</p>
+<div class="grid g3">
+<div class="card"><h3>📰 El anuncio de la Receita</h3><p>Por qué lo abrió: transparencia, seguridad jurídica y un componente oficial para que las empresas lo conecten a sus sistemas.</p><p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">Noticia de la Receita Federal (16/11) (en portugués)</a></p></div>
+<div class="card"><h3>📜 La orden</h3><p>Orden Cotec n.º 342, del 12/11/2026: autoriza la apertura de los tres programas y establece que no hay soporte ni efecto de ley.</p><p><a href="https://www.in.gov.br/web/dou/-/portaria-cotec-n-342-de-12-de-novembro-de-2026-744398356" rel="noopener" target="_blank">Diario Oficial de la Unión (en portugués)</a></p></div>
+<div class="card"><h3>💾 El código</h3><p><a href="https://github.com/ReceitaFederal/calculadora-rtc-regime-regular" rel="noopener" target="_blank">Calculadora del régimen regular</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-simples-nacional" rel="noopener" target="_blank">del régimen Simples Nacional</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-gerador-danfse" rel="noopener" target="_blank">generador de facturas de servicios en PDF</a>.</p></div>
+<div class="card"><h3>⚖️ La alícuota del 11,3%</h3><p>El TCU entrega el estudio al Senado (10/11) y la comisión pide la metodología (18/11).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs" rel="noopener" target="_blank">Agencia Senado (en portugués)</a> · <a href="https://www.contabeis.com.br/noticias/81063/aliquota-da-cbs-senado-pede-estudos-ao-tcu/" rel="noopener" target="_blank">Contábeis (en portugués)</a></p></div>
+<div class="card"><h3>💬 El 8,5% de Hacienda</h3><p>El ministro estima la alícuota efectiva media en una audiencia en el Senado (17/11).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/17/no-senado-ministro-da-fazenda-defende-novo-tributo-sobre-o-consumo" rel="noopener" target="_blank">Agencia Senado (en portugués)</a></p></div>
+<div class="card"><h3>🧪 Los dos cálculos</h3><p>Los ejecutamos el 23/11/2026; se incluyen las versiones, los tiempos y las respuestas completas del programa.</p><p><a href="https://github.com/inematds/calculadora-da-reforma/blob/main/kit/MEDICOES.md" rel="noopener" target="_blank">Mediciones del kit (en portugués)</a></p></div>
+</div>
+</div></section>
+<section id="faq"><div class="wrap">
+<span class="chip">Preguntas frecuentes</span>
+<h2>Antes de <span class="amb">sacar conclusiones</span></h2>
+<div class="grid g2">
+<div class="card"><h3>¿Mis precios subirán un 11,3%?</h3><p>No se puede afirmar eso. La CBS sustituye al PIS y la Cofins, que ya están incluidos en los precios, y muchos productos y servicios tienen reducciones. El cálculo varía según el caso; por eso conviene ejecutar el tuyo.</p></div>
+<div class="card"><h3>¿Ya se decidió la alícuota?</h3><p>No. Al 24/11/2026, el Senado aún no había votado. El plazo es el 15 de diciembre. Hasta entonces, el programa marca el resultado de 2027 como «simulado».</p></div>
+<div class="card"><h3>¿Qué son la CBS, el IBS y el Impuesto Selectivo?</h3><p>CBS: impuesto federal al consumo, en lugar del PIS y la Cofins. IBS: el de los estados y municipios, en lugar del ICMS y el ISS; comenzará a aplicarse de verdad a partir de 2029. Impuesto Selectivo: un recargo sobre productos perjudiciales para la salud o el medio ambiente, como las bebidas y los cigarrillos.</p></div>
+<div class="card"><h3>¿El resultado del programa tiene valor de ley?</h3><p>No. La propia orden dice que el código no tiene efecto de ley y que no hay soporte. Es una referencia sólida para verificar los cálculos; la responsabilidad por el impuesto sigue siendo de quien emite la factura.</p></div>
+<div class="card"><h3>¿Tengo que hacer algo?</h3><p>Si solo compras, no. Si vendes, pregunta al proveedor de tu sistema si ya calcula la CBS de 2027 y comprueba algunas ventas antes de enero.</p></div>
+<div class="card"><h3>¿Cuánto cuesta?</h3><p>Leer esta página, el código de la Receita y el kit Calculadora abierta es gratis. La forma más sencilla de ejecutarlo utiliza Claude Code o Codex, incluidos en la suscripción de pago de Claude o ChatGPT.</p></div>
+</div>
+<p class="fonte" style="margin-top:22px">Y tú, ¿ya sabes qué parte del precio de lo que compras son impuestos o lo descubrirás recién en la factura de enero? Gratis en inema.club, directo en internet.</p>
+</div></section>
+</main>
+<footer>
+<div class="wrap">
+<div class="pill">Fuente: código abierto de la Receita Federal</div><div class="pill">Explicación gratuita y no oficial</div><div class="pill">PT · EN · ES</div>
+<p style="margin-top:18px">La Receita abrió el cálculo · explicación de INEMA, no oficial, sobre el código abierto de la Receita Federal · gratis en inema.club, directo en internet ·
+      <a href="https://github.com/inematds/receita-abriu-o-calculo">inematds/receita-abriu-o-calculo</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+</div>
+</footer>
+<script>
+  (function(){
+    var KEY='receita-abriu-o-calculo-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
+    });
+  })();
+</script>
+</body>
+<link href="https://inematds.github.io/receita-abriu-o-calculo/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/receita-abriu-o-calculo/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/receita-abriu-o-calculo/guia/es/" hreflang="es" rel="alternate"/></head></html>
