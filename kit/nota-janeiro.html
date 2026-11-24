@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nota em janeiro</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#0c0c10}
+  body{width:1400px;height:820px;color:#e9e9ee;font-family:Inter,sans-serif;position:relative;overflow:hidden}
+  .glow{position:absolute;inset:-30% -10% auto auto;width:70%;height:700px;background:radial-gradient(closest-side,rgba(250,204,21,.16),transparent 70%)}
+  h1{font:800 42px/1.1 Sora,sans-serif;letter-spacing:-.02em;margin:0;position:absolute;left:60px;top:40px;right:60px}
+  h1 b{color:#FACC15}
+  .sub{position:absolute;left:60px;top:110px;font-size:20px;color:#a8a8b3;right:60px}
+  .row{position:absolute;left:60px;right:60px;top:165px;display:flex;gap:40px;align-items:flex-start}
+  .foto{width:330px;flex:none}
+  .foto .tag{font:600 15px Sora,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#a8a8b3;margin-bottom:10px}
+  .foto .img{height:430px;overflow:hidden;border-radius:8px;border:1px solid #2a2a33;transform:rotate(-1.5deg);box-shadow:0 30px 70px -20px #000}
+  .foto img{width:100%;display:block}
+  .foto .tot{margin-top:18px;font:800 30px Sora,sans-serif}
+  .foto .tot small{display:block;font:400 16px Inter,sans-serif;color:#a8a8b3;margin-top:4px}
+  .nota{flex:1;background:#f4f1e8;color:#1b1b22;border-radius:6px;padding:24px 30px 22px;font-family:"JetBrains Mono",monospace;font-size:18px;box-shadow:0 30px 70px -20px #000}
+  .nota .tag{font:600 15px Sora,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#6b6b76}
+  .nota .tt{font:800 28px Sora,sans-serif;margin:4px 0 14px}
+  .g{display:grid;grid-template-columns:1fr 150px 130px 130px;gap:10px;align-items:baseline;padding:9px 0;border-top:1px dashed #b9b4a6}
+  .g>span:nth-child(n+2){text-align:right;white-space:nowrap}
+  .g.h{border-top:0;font:600 14px Sora,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#6b6b76;padding-bottom:4px}
+  .g .q{display:block;text-align:left;font:400 14px Inter,sans-serif;color:#555;margin-top:3px}
+  .g b{font-weight:600}
+  .g.ibs{color:#555;font-size:16px}
+  .g.t{border-top:2px solid #1b1b22;margin-top:6px;padding-top:12px}
+  .g.t span:first-child{font:600 18px Sora,sans-serif}
+  .g.t b{font:800 30px Sora,sans-serif;letter-spacing:-.02em;white-space:nowrap;text-align:right}
+  .g{grid-template-columns:1fr 140px 135px 150px}
+  .g.t b::before{content:attr(data-l);display:none}
+  .g.t b.y{background:linear-gradient(transparent 55%,#FACC15 55%)}
+  .foot{position:absolute;left:60px;right:60px;bottom:26px;display:flex;justify-content:space-between;gap:30px;font-size:16px;color:#a8a8b3}
+  .foot b{color:#FACC15;font-family:Sora;white-space:nowrap}
+  body.v{width:760px;height:auto;padding:44px 36px 34px;overflow:visible}
+  body.v h1,body.v .sub,body.v .row,body.v .foot{position:static}
+  body.v h1{font-size:38px}
+  body.v .sub{margin:14px 0 26px;font-size:18px}
+  body.v .row{flex-direction:column;gap:30px;align-items:stretch}
+  body.v .foto{width:auto}
+  body.v .foto .img{height:300px}
+  body.v .nota{font-size:16px;padding:22px 20px}
+  body.v .g{grid-template-columns:1fr 92px 82px 92px;gap:6px}
+  body.v .nota{font-size:14px}
+  body.v .g.t{grid-template-columns:1fr 1fr;row-gap:6px}
+  body.v .g.t span:first-child{grid-column:1/3;font-size:17px}
+  body.v .g.t span:nth-child(2){display:none}
+  body.v .g.t b{font-size:34px;text-align:left}
+  body.v .g.t b::before{display:block;font:600 13px Sora,sans-serif;letter-spacing:.06em;color:#6b6b76;margin-bottom:4px}
+  body.v .g.t b{font-size:26px}
+  body.v .foot{margin-top:28px;flex-direction:column;gap:8px;font-size:15px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<h1 id="t"></h1>
+<div class="sub" id="s"></div>
+<div class="row">
+  <div class="foto">
+    <div class="tag" id="fh"></div>
+    <div class="img"><img src="../guia/assets/nota-hoje.jpg" alt=""></div>
+    <div class="tot" id="ft"></div>
+  </div>
+  <div class="nota">
+    <div class="tag" id="nt"></div>
+    <div class="tt" id="nn"></div>
+    <div class="g h"><span></span><span id="hb"></span><span data-p="8,8"></span><span data-p="11,3"></span></div>
+    <div id="gr"></div>
+    <div class="g ibs"><span id="ib"></span><span></span><span data-v="0,70"></span><span data-v="0,70"></span></div>
+    <div class="g t"><span id="tc"></span><span data-v="1.512,15"></span><b data-v="89,14"></b><b class="y" data-v="114,30"></b></div>
+  </div>
+</div>
+<div class="foot"><span id="f1"></span><b>INEMA.CLUB</b></div>
+<script>
+var L={
+ pt:{t:'A sua nota do mercado <b>em janeiro de 2027</b>',
+  s:'Uma compra de verdade, rodada no programa que a Receita abriu · simulação, não é nota fiscal',
+  fh:'A nota de hoje · 06/11/2026',ft:'R$ 1.512,15<small>121 itens num supermercado do RS</small>',
+  nt:'A mesma compra em janeiro',nn:'CBS item por item',hb:'Valor',
+  g:[['Cesta básica: alíquota zero','frango, leite, café, açúcar, sal, farinha, sagu'],
+     ['Redução de 60%','bebida láctea, iogurte, óleo de soja, amido'],
+     ['Alíquota cheia','leite condensado, creme de leite, gelatina, conservas, molhos']],
+  ib:'IBS de teste (0,1%)',tc:'CBS total',
+  f:'A CBS entra no lugar do PIS e da Cofins, que já estão no preço · códigos dos produtos escolhidos pelo INEMA · rodado em 24/11/2026'},
+ en:{"t": "Your grocery receipt <b>in January 2027</b>", "s": "A real purchase, run through the program opened by the Federal Revenue · simulation, not a tax receipt", "fh": "Today's receipt · 11/06/2026", "ft": "R$ 1,512.15<small>121 items at a supermarket in RS</small>", "nt": "The same purchase in January", "nn": "CBS item by item", "hb": "Amount", "g": [["Basic food basket: zero rate", "chicken, milk, coffee, sugar, salt, flour, sagu"], ["60% reduction", "dairy drink, yogurt, soybean oil, cornstarch"], ["Full rate", "condensed milk, cream, gelatin, canned goods, sauces"]], "ib": "Test IBS (0.1%)", "tc": "Total CBS", "f": "CBS replaces PIS and Cofins, which are already included in the price · product codes selected by INEMA · run on 11/24/2026", "nav": "In January"},
+ es:{"t": "Tu comprobante del supermercado <b>en enero de 2027</b>", "s": "Una compra real, procesada en el programa que abrió la Receita Federal · simulación, no es un comprobante fiscal", "fh": "El comprobante de hoy · 06/11/2026", "ft": "R$ 1.512,15<small>121 artículos en un supermercado de RS</small>", "nt": "La misma compra en enero", "nn": "CBS artículo por artículo", "hb": "Valor", "g": [["Canasta básica: tasa cero", "pollo, leche, café, azúcar, sal, harina, sagu"], ["Reducción del 60%", "bebida láctea, yogur, aceite de soya, fécula"], ["Tasa completa", "leche condensada, crema de leche, gelatina, conservas, salsas"]], "ib": "IBS de prueba (0,1%)", "tc": "CBS total", "f": "La CBS reemplaza al PIS y a la Cofins, que ya están en el precio · códigos de los productos elegidos por INEMA · ejecutado el 24/11/2026", "nav": "En enero"}
+};
+var G=[['396,04','0,00','0,00'],['173,74','6,13','7,87'],['942,37','83,01','106,43']];
+var qs=new URLSearchParams(location.search);
+if(qs.get('v'))document.body.classList.add('v');
+var lg=qs.get('lang')||'pt', T=L[lg]||L.pt;
+function n(x){return lg==='en'?x.replace(/\./g,'#').replace(/,/g,'.').replace(/#/g,','):x}
+function v(x){return 'R$ '+n(x)}
+var h='';G.forEach(function(r,i){h+='<div class="g"><div><b>'+T.g[i][0]+'</b><span class="q">'+T.g[i][1]+'</span></div><span>'+v(r[0])+'</span><span>'+v(r[1])+'</span><span>'+v(r[2])+'</span></div>'});
+document.getElementById('gr').innerHTML=h;
+document.getElementById('t').innerHTML=T.t;
+['s','fh','nt','nn','hb','ib','tc'].forEach(function(k){document.getElementById(k).textContent=T[k]});
+document.getElementById('ft').innerHTML=T.ft;document.getElementById('f1').textContent=T.f;
+document.querySelectorAll('[data-v]').forEach(function(e){e.textContent=v(e.dataset.v)});
+document.querySelectorAll('.g.t b').forEach(function(e,i){e.dataset.l='CBS '+n(i?'11,3':'8,8')+'%'});
+document.querySelectorAll('[data-p]').forEach(function(e){e.textContent='CBS '+n(e.dataset.p)+'%'});
+</script>
+</body>
+</html>

@@ -178,6 +178,7 @@
 </span>
 <div class="links">
 <a class="sec" href="#notas">The two calculations</a>
+<a class="sec" href="#janeiro">In January</a>
 <a class="sec" href="#acontecendo">What's happening</a>
 <a class="sec opt" href="#voce">For you</a>
 <a class="sec" href="#comecar">Check for yourself</a>
@@ -231,6 +232,26 @@
 </ul>
 <p class="fonte">The purchase total is R$ 1,465.00. Both calculations also show R$ 0.64 in IBS, which in 2027 is just a 0.1% test. Run on 11/23/2026 with version 1.7.2 of the Federal Revenue Service's program.</p></div>
 </div></section>
+<section id="janeiro"><div class="wrap">
+<span class="chip">January example</span>
+<h2>A real grocery receipt, <span class="amb">what it looks like in January</span></h2>
+<p class="sub">A purchase of R$ 1,512.15 at a supermarket in RS, on 11/06/2026: 121 items. We ran each line of the receipt through Brazil's Federal Revenue program, as if the purchase were made in January 2027, when CBS begins.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="../assets/nota-janeiro-vertical-en.jpg"/><img style="width:100%;display:block" alt="Today's receipt, R$ 1,512.15, and the same purchase in January 2027: basic food basket with zero CBS, items with a 60% reduction, and items at the full rate; total CBS of R$ 89.14 at 8.8% or R$ 114.30 at 11.3%" src="../assets/nota-janeiro-en.jpg"/></picture></figure>
+<div class="grid g2">
+<div class="card"><h3>🧾 CBS at 8.8% → R$ 89.14</h3><p>Using the example's test rate from the Federal Revenue. That's <strong>5.9%</strong> of the purchase total.</p></div>
+<div class="card"><h3>🧾 CBS at 11.3% → R$ 114.30</h3><p>Using the rate recommended by the TCU, <strong>not yet approved</strong>. That's 7.6% of the purchase total. The difference between the two is R$ 25.16.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>🔎 What the calculation shows, product by product</h3><ul class="conta">
+<li><strong>Basic food basket items have zero CBS:</strong> chicken, milk, coffee, sugar, salt, wheat flour, and sagu, totaling R$ 396.04 on the receipt. The program states the reason: zero rate, article 125 of the law.</li>
+<li><strong>Some foods get a 60% rate reduction:</strong> soybean oil, dairy drink, yogurt, and cornstarch (R$ 173.74). The 19 bottles of soybean oil (R$ 132.81) incur R$ 4.67 in CBS at 8.8%, not R$ 11.69.</li>
+<li><strong>Non-basic items add up:</strong> the 81 cans of condensed milk (R$ 404.19) alone incur R$ 35.57 or R$ 45.67 in CBS, and the 81 cartons of cream, R$ 17.75 or R$ 22.79. Gelatin, sauces, mayonnaise, and chocolate drink mix also pay the full rate.</li>
+<li><strong>The canned-food catch:</strong> canned corn and peas and shoestring potatoes may look like "vegetables," but the law's reduction applies only to cooked vegetables with no salt or other ingredients. Canned vegetables contain salt, so they fall under the full rate.</li>
+</ul>
+<p>CBS isn't added on top of today's price: it replaces PIS and Cofins, which are already included in the R$ 1,512.15. The calculation shows how much of the purchase becomes CBS, with each tax named item by item.</p>
+<p class="fonte">The receipt doesn't include the products' tax code (NCM): INEMA selected a code for each one and checked its classification in the program's own table. We assumed a supermarket under the standard tax regime (the calculation is different under Simples Nacional) and used the value of each receipt line as the tax base. Both calculations also show R$ 0.70 in IBS, the 0.1% test rate for 2027. This is a simulation, not a tax receipt. Run on 11/24/2026, using version 1.7.2 of the Federal Revenue program; the program input and response are in the kit, at <a href="https://github.com/inematds/calculadora-da-reforma/tree/main/kit/exemplos" rel="noopener" target="_blank">kit/exemplos</a>.</p>
+</div>
+</div></section>
+
 <!-- VIDEO: the project's explainer video will go here once published (section #video with 16:9 embed) -->
 <section id="acontecendo"><div class="wrap">
 <span class="chip">What's happening</span>
