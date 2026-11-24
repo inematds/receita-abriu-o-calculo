@@ -162,6 +162,7 @@
   @media(max-width:720px){.proj{grid-template-columns:1fr}}
   .conta{font-size:1.05rem;max-width:76ch}
   .conta li{margin:6px 0}
+  .quem-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:0 0 14px;display:block;border:1px solid var(--line)}
   .selo{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:.85rem;color:var(--mut)}
   .selo a.lg{background:#fff;border-radius:8px;padding:4px 8px;display:flex}
   .selo img{height:30px;width:auto;display:block}
@@ -200,7 +201,7 @@
 <a class="btn ghost" href="#comecar">Check my sales</a>
 </div>
 </div>
-<figure><picture><source media="(max-width:600px)" srcset="../assets/notas-vertical-en.jpg"/><img alt="The same purchase, two calculations of the new tax: CBS of R$ 56.76 at 8.8% and R$ 72.88 at 11.3%, recommended by the TCU and not yet approved" src="../assets/notas-en.jpg"/></picture></figure>
+<figure><img alt="The new tax math is open: the same purchase costs R$ 56.76 or R$ 72.88 in new tax" src="../assets/banner-en.jpg"/></figure>
 </div>
 </header>
 <main>
@@ -211,11 +212,13 @@
 </div>
 <span class="chip">In a nutshell</span>
 <p><strong>Brazil's Federal Revenue Service has made public the program that calculates the new taxes under the tax reform</strong>: CBS (federal, replacing PIS and Cofins), IBS (for states and municipalities), and the Selective Tax (which applies to beverages, cigarettes, and other products). The program has been available for download through the CBS Platform since 2025; the November news is that it was published on GitHub, where every version and fix is visible to everyone, and anyone can run it and check the results. This page explains what happened in November, shows the same purchase calculated with the rate in the Federal Revenue Service's example (8.8%, just a test figure) and the rate recommended by the TCU (11.3%, not yet voted on), and explains what this means for you. Just read on; if you want to run the calculation, find out how at <a href="#comecar">"Check for yourself"</a>.</p>
+<figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img alt="Brazil opened the new tax math: the two bills, November timeline, buyers, sellers, accountants, check it yourself" loading="lazy" src="../assets/banner-grade-en.jpg" style="width:100%;display:block"/></figure>
 </div></section>
 <section id="notas"><div class="wrap">
 <span class="chip">The two calculations</span>
 <h2>The same purchase, <span class="amb">R$ 16.12 apart</span></h2>
 <p class="sub">We took the example published by the Federal Revenue Service in the program documentation and ran it twice, changing just one number: the CBS rate.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="../assets/notas-vertical-en.jpg"/><img style="width:100%;display:block" alt="The same purchase, two calculations of the new tax: CBS of R$ 56.76 at 8.8% and R$ 72.88 at 11.3%, recommended by the TCU and not yet approved" src="../assets/notas-en.jpg"/></picture></figure>
 <div class="grid g2">
 <div class="card"><h3>🧾 Calculation A: CBS at 8.8% → R$ 56.76</h3><p>This is the rate used by the Federal Revenue Service in its documentation example. It is for testing the program; <strong>it is not a proposed rate</strong>. The total matches the figure in the official documentation.</p></div>
 <div class="card"><h3>🧾 Calculation B: CBS at 11.3% → R$ 72.88</h3><p>This is the reference rate the TCU (Federal Court of Accounts) calculated for 2027 and submitted to the Senate. <strong>It has not yet been approved.</strong> At this rate, CBS on the same purchase rises by 28%.</p></div>
@@ -251,10 +254,10 @@
 <span class="chip">For you</span>
 <h2>What this means <span class="amb">for your wallet and your work</span></h2>
 <div class="grid g2">
-<div class="card"><h3>🛒 Shoppers</h3><p>CBS is not an extra tax added on top of everything: it replaces PIS and Cofins, which are already included in prices today. What changes is the amount, which depends on the rate set by the Senate and on each product's reductions, such as those for rice and education in the calculations above.</p></div>
-<div class="card"><h3>🏢 Sellers and business owners</h3><p>Your invoicing system needs to calculate correctly starting in January. Now you can check: run the same sale through your system and the Federal Revenue Service's program, then see whether the figures match.</p></div>
-<div class="card"><h3>📒 Accountants</h3><p>An independent second opinion alongside the client's system, with the reason and the relevant article of law spelled out. Useful for an expert opinion and for explaining to clients why the calculation came out that way.</p><p>And a warning before rejection: the "blocked" meat in the calculations above has a product code (NCM) that does not match its tax classification—the same error that would cause the invoice to be rejected.</p></div>
-<div class="card"><h3>💻 Software developers</h3><p>The official reference for testing your own code. You can use the MIT License, but you cannot use the Federal Revenue Service's name to claim that your product is official.</p></div>
+<div class="card"><img alt="Woman at a supermarket checkout checks her receipt" class="quem-img" loading="lazy" src="../assets/quem-comprador.jpg"/><h3>🛒 Shoppers</h3><p>CBS is not an extra tax added on top of everything: it replaces PIS and Cofins, which are already included in prices today. What changes is the amount, which depends on the rate set by the Senate and on each product's reductions, such as those for rice and education in the calculations above.</p></div>
+<div class="card"><img alt="Owner of a neighborhood shop compares two values on a laptop" class="quem-img" loading="lazy" src="../assets/quem-vendedor.jpg"/><h3>🏢 Sellers and business owners</h3><p>Your invoicing system needs to calculate correctly starting in January. Now you can check: run the same sale through your system and the Federal Revenue Service's program, then see whether the figures match.</p></div>
+<div class="card"><img alt="Accountant compares a printed report with the computer screen" class="quem-img" loading="lazy" src="../assets/quem-contador.jpg"/><h3>📒 Accountants</h3><p>An independent second opinion alongside the client's system, with the reason and the relevant article of law spelled out. Useful for an expert opinion and for explaining to clients why the calculation came out that way.</p><p>And a warning before rejection: the "blocked" meat in the calculations above has a product code (NCM) that does not match its tax classification—the same error that would cause the invoice to be rejected.</p></div>
+<div class="card"><img alt="Developer checks a table of numbers next to the code" class="quem-img" loading="lazy" src="../assets/quem-dev.jpg"/><h3>💻 Software developers</h3><p>The official reference for testing your own code. You can use the MIT License, but you cannot use the Federal Revenue Service's name to claim that your product is official.</p></div>
 </div>
 </div></section>
 <section id="comecar"><div class="wrap">

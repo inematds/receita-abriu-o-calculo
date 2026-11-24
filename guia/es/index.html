@@ -162,6 +162,7 @@
   @media(max-width:720px){.proj{grid-template-columns:1fr}}
   .conta{font-size:1.05rem;max-width:76ch}
   .conta li{margin:6px 0}
+  .quem-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:0 0 14px;display:block;border:1px solid var(--line)}
   .selo{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:.85rem;color:var(--mut)}
   .selo a.lg{background:#fff;border-radius:8px;padding:4px 8px;display:flex}
   .selo img{height:30px;width:auto;display:block}
@@ -200,7 +201,7 @@
 <a class="btn ghost" href="#comecar">Comprobar mis ventas</a>
 </div>
 </div>
-<figure><picture><source media="(max-width:600px)" srcset="../assets/notas-vertical-es.jpg"/><img alt="La misma compra, dos cálculos del nuevo impuesto: CBS de R$ 56,76 con una alícuota del 8,8% y R$ 72,88 con el 11,3%, recomendado por el TCU y aún no aprobado" src="../assets/notas-es.jpg"/></picture></figure>
+<figure><img alt="La Receita abrió la cuenta: la misma compra da R$ 56,76 o R$ 72,88 de impuesto nuevo" src="../assets/banner-es.jpg"/></figure>
 </div>
 </header>
 <main>
@@ -211,11 +212,13 @@
 </div>
 <span class="chip">En una frase</span>
 <p><strong>La Receita Federal abrió al público el programa que calcula los nuevos impuestos de la reforma tributaria</strong>: la CBS (federal, en lugar del PIS y de Cofins), el IBS (de los estados y municipios) y el Impuesto Selectivo (que grava bebidas, cigarrillos y otros productos). El programa ya se podía descargar desde la Plataforma CBS desde 2025; la novedad de noviembre es que se publicó en GitHub, con cada versión y cada corrección a la vista de todos, y cualquiera puede ejecutarlo y comprobar los resultados. Esta página explica qué pasó en noviembre, muestra la misma compra calculada con la alícuota del ejemplo de la Receita (8,8%, solo un número de prueba) y con la recomendada por el TCU (11,3%, aún no votada), y cuenta qué cambia para ti. Solo tienes que leer; si quieres hacer el cálculo, encontrarás cómo en <a href="#comecar">«Compruébalo tú mismo»</a>.</p>
+<figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img alt="La Receita abrió la cuenta del impuesto nuevo: las dos cuentas, línea de tiempo, quien compra, quien vende, contador, compruébalo tú" loading="lazy" src="../assets/banner-grade-es.jpg" style="width:100%;display:block"/></figure>
 </div></section>
 <section id="notas"><div class="wrap">
 <span class="chip">Los dos cálculos</span>
 <h2>La misma compra, <span class="amb">R$ 16,12 de diferencia</span></h2>
 <p class="sub">Tomamos el ejemplo que la propia Receita publica en la documentación del programa y lo calculamos dos veces, cambiando solo un número: la alícuota de la CBS.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="../assets/notas-vertical-es.jpg"/><img style="width:100%;display:block" alt="La misma compra, dos cálculos del nuevo impuesto: CBS de R$ 56,76 con una alícuota del 8,8% y R$ 72,88 con el 11,3%, recomendado por el TCU y aún no aprobado" src="../assets/notas-es.jpg"/></picture></figure>
 <div class="grid g2">
 <div class="card"><h3>🧾 Cálculo A: CBS del 8,8% → R$ 56,76</h3><p>Es la alícuota que la Receita usó en el ejemplo de la documentación. Sirve para probar el programa; <strong>no es una propuesta</strong> de alícuota. El total coincide con el publicado en la documentación oficial.</p></div>
 <div class="card"><h3>🧾 Cálculo B: CBS del 11,3% → R$ 72,88</h3><p>Es la alícuota de referencia que el TCU (Tribunal de Cuentas de la Unión) calculó para 2027 y envió al Senado. <strong>Aún no se ha aprobado.</strong> Con ella, la CBS de la misma compra aumenta un 28%.</p></div>
@@ -251,10 +254,10 @@
 <span class="chip">Para ti</span>
 <h2>Qué cambia <span class="amb">para tu bolsillo y tu trabajo</span></h2>
 <div class="grid g2">
-<div class="card"><h3>🛒 Quienes compran</h3><p>La CBS no es un impuesto adicional sobre todo: reemplaza al PIS y a Cofins, que ya están incluidos en los precios. Lo que cambia es el importe, y depende de la alícuota que fije el Senado y de las reducciones aplicables a cada producto, como las del arroz y la educación en los cálculos anteriores.</p></div>
-<div class="card"><h3>🏢 Quienes venden o tienen una empresa</h3><p>El sistema que emite tus facturas debe calcular correctamente a partir de enero. Ahora puedes comprobarlo: compara la misma venta en tu sistema y en el programa de la Receita, y verifica si el importe coincide.</p></div>
-<div class="card"><h3>📒 Contadores</h3><p>Una segunda opinión independiente del sistema del cliente, con el motivo explicado y el artículo de la ley. Es útil para elaborar informes y explicar al cliente por qué dio ese resultado.</p><p>Y una alerta antes del rechazo: la carne «bloqueada» en los cálculos anteriores tiene un código de producto (NCM) que no coincide con la clasificación del impuesto; es el mismo error que haría que se rechazara la factura.</p></div>
-<div class="card"><h3>💻 Quienes desarrollan sistemas</h3><p>La referencia oficial para probar tu propio código. Puedes usar la licencia MIT, siempre que no uses el nombre de la Receita para afirmar que el producto es oficial.</p></div>
+<div class="card"><img alt="Mujer en la caja del supermercado revisa el ticket" class="quem-img" loading="lazy" src="../assets/quem-comprador.jpg"/><h3>🛒 Quienes compran</h3><p>La CBS no es un impuesto adicional sobre todo: reemplaza al PIS y a Cofins, que ya están incluidos en los precios. Lo que cambia es el importe, y depende de la alícuota que fije el Senado y de las reducciones aplicables a cada producto, como las del arroz y la educación en los cálculos anteriores.</p></div>
+<div class="card"><img alt="Dueño de una tienda de barrio compara dos valores en el portátil" class="quem-img" loading="lazy" src="../assets/quem-vendedor.jpg"/><h3>🏢 Quienes venden o tienen una empresa</h3><p>El sistema que emite tus facturas debe calcular correctamente a partir de enero. Ahora puedes comprobarlo: compara la misma venta en tu sistema y en el programa de la Receita, y verifica si el importe coincide.</p></div>
+<div class="card"><img alt="Contadora compara un informe impreso con la pantalla" class="quem-img" loading="lazy" src="../assets/quem-contador.jpg"/><h3>📒 Contadores</h3><p>Una segunda opinión independiente del sistema del cliente, con el motivo explicado y el artículo de la ley. Es útil para elaborar informes y explicar al cliente por qué dio ese resultado.</p><p>Y una alerta antes del rechazo: la carne «bloqueada» en los cálculos anteriores tiene un código de producto (NCM) que no coincide con la clasificación del impuesto; es el mismo error que haría que se rechazara la factura.</p></div>
+<div class="card"><img alt="Programador revisa una tabla de números junto al código" class="quem-img" loading="lazy" src="../assets/quem-dev.jpg"/><h3>💻 Quienes desarrollan sistemas</h3><p>La referencia oficial para probar tu propio código. Puedes usar la licencia MIT, siempre que no uses el nombre de la Receita para afirmar que el producto es oficial.</p></div>
 </div>
 </div></section>
 <section id="comecar"><div class="wrap">

@@ -2,7 +2,9 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![The same purchase, two calculations of the new tax](guia/assets/notas-en.jpg)](https://inematds.github.io/receita-abriu-o-calculo/guia/en/)
+[![The new tax math is open](guia/assets/banner-en.jpg)](https://inematds.github.io/receita-abriu-o-calculo/guia/en/)
+
+![Same purchase, two bills for the new tax](guia/assets/notas-en.jpg)
 
 ## What it is
 

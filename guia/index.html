@@ -162,6 +162,7 @@
   @media(max-width:720px){.proj{grid-template-columns:1fr}}
   .conta{font-size:1.05rem;max-width:76ch}
   .conta li{margin:6px 0}
+  .quem-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:0 0 14px;display:block;border:1px solid var(--line)}
   .selo{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:.85rem;color:var(--mut)}
   .selo a.lg{background:#fff;border-radius:8px;padding:4px 8px;display:flex}
   .selo img{height:30px;width:auto;display:block}
@@ -200,7 +201,7 @@
 <a class="btn ghost" href="#comecar">Conferir as minhas vendas</a>
 </div>
 </div>
-<figure><picture><source media="(max-width:600px)" srcset="assets/notas-vertical.jpg"/><img alt="A mesma compra, duas contas do imposto novo: CBS de R$ 56,76 com alíquota de 8,8% e R$ 72,88 com 11,3%, recomendada pelo TCU e ainda não aprovada" src="assets/notas.jpg"/></picture></figure>
+<figure><img alt="A Receita abriu a conta: a mesma compra dá R$ 56,76 ou R$ 72,88 de imposto novo" src="assets/banner.jpg"/></figure>
 </div>
 </header>
 <main>
@@ -211,11 +212,13 @@
 </div>
 <span class="chip">Em uma frase</span>
 <p><strong>A Receita Federal abriu em público o programa que calcula os impostos novos da reforma tributária</strong>: a CBS (federal, no lugar do PIS e da Cofins), o IBS (de estados e municípios) e o Imposto Seletivo (o que pesa sobre bebida, cigarro e outros produtos). O programa já podia ser baixado pela Plataforma CBS desde 2025; a novidade de novembro é que ele foi aberto no GitHub, com cada versão e cada correção à vista de todos, e qualquer pessoa pode rodar e conferir. Esta página explica o que aconteceu em novembro, mostra a mesma compra calculada com a alíquota do exemplo da Receita (8,8%, só um número de teste) e com a que o TCU recomendou (11,3%, ainda não votada) e diz o que isso muda para você. É só ler; quem quiser rodar a conta encontra o caminho em <a href="#comecar">"Confira você mesmo"</a>.</p>
+<figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img alt="A Receita abriu a conta do imposto novo: as duas contas, a linha do tempo de novembro, quem compra, quem vende, contador, confira você mesmo" loading="lazy" src="assets/banner-grade.jpg" style="width:100%;display:block"/></figure>
 </div></section>
 <section id="notas"><div class="wrap">
 <span class="chip">As duas contas</span>
 <h2>A mesma compra, <span class="amb">R$ 16,12 de diferença</span></h2>
 <p class="sub">Pegamos o exemplo que a própria Receita publica na documentação do programa e rodamos duas vezes, trocando só um número: a alíquota da CBS.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="assets/notas-vertical.jpg"/><img style="width:100%;display:block" alt="A mesma compra, duas contas do imposto novo: CBS de R$ 56,76 com alíquota de 8,8% e R$ 72,88 com 11,3%, recomendada pelo TCU e ainda não aprovada" src="assets/notas.jpg"/></picture></figure>
 <div class="grid g2">
 <div class="card"><h3>🧾 Conta A: CBS de 8,8% → R$ 56,76</h3><p>É a alíquota que a Receita usou no exemplo da documentação. Serve para testar o programa; <strong>não é uma proposta</strong> de alíquota. O total bate com o que a documentação oficial publica.</p></div>
 <div class="card"><h3>🧾 Conta B: CBS de 11,3% → R$ 72,88</h3><p>É a alíquota de referência que o TCU (Tribunal de Contas da União) calculou para 2027 e mandou ao Senado. <strong>Ainda não foi aprovada.</strong> Com ela, a CBS da mesma compra sobe 28%.</p></div>
@@ -251,10 +254,10 @@
 <span class="chip">Para você</span>
 <h2>O que isso muda <span class="amb">no seu bolso e no seu trabalho</span></h2>
 <div class="grid g2">
-<div class="card"><h3>🛒 Quem compra</h3><p>A CBS não é um imposto a mais por cima de tudo: ela entra no lugar do PIS e da Cofins, que já estão no preço hoje. O que muda é o tamanho da conta, e isso depende da alíquota que o Senado fixar e das reduções de cada produto, como as do arroz e da escola nas contas acima.</p></div>
-<div class="card"><h3>🏢 Quem vende ou tem empresa</h3><p>O sistema que emite as suas notas precisa calcular certo a partir de janeiro. Agora dá para conferir: a mesma venda no seu sistema e no programa da Receita, e ver se o valor bate.</p></div>
-<div class="card"><h3>📒 Contador</h3><p>Uma segunda opinião independente do sistema do cliente, com o motivo escrito e o artigo da lei. Bom para parecer e para explicar ao cliente por que a conta deu aquilo.</p><p>E o alerta antes da rejeição: a carne "barrada" nas contas acima é o código do produto (NCM) que não combina com a classificação do imposto, o mesmo erro que faria a nota ser rejeitada.</p></div>
-<div class="card"><h3>💻 Quem faz sistema</h3><p>A referência oficial para testar o próprio código. Pode usar a licença MIT, sem usar o nome da Receita para dizer que o produto é oficial.</p></div>
+<div class="card"><img alt="Mulher no caixa do supermercado confere o cupom fiscal" class="quem-img" loading="lazy" src="assets/quem-comprador.jpg"/><h3>🛒 Quem compra</h3><p>A CBS não é um imposto a mais por cima de tudo: ela entra no lugar do PIS e da Cofins, que já estão no preço hoje. O que muda é o tamanho da conta, e isso depende da alíquota que o Senado fixar e das reduções de cada produto, como as do arroz e da escola nas contas acima.</p></div>
+<div class="card"><img alt="Dono de uma loja de bairro confere dois valores no notebook" class="quem-img" loading="lazy" src="assets/quem-vendedor.jpg"/><h3>🏢 Quem vende ou tem empresa</h3><p>O sistema que emite as suas notas precisa calcular certo a partir de janeiro. Agora dá para conferir: a mesma venda no seu sistema e no programa da Receita, e ver se o valor bate.</p></div>
+<div class="card"><img alt="Contadora compara um relatório impresso com a tela do computador" class="quem-img" loading="lazy" src="assets/quem-contador.jpg"/><h3>📒 Contador</h3><p>Uma segunda opinião independente do sistema do cliente, com o motivo escrito e o artigo da lei. Bom para parecer e para explicar ao cliente por que a conta deu aquilo.</p><p>E o alerta antes da rejeição: a carne "barrada" nas contas acima é o código do produto (NCM) que não combina com a classificação do imposto, o mesmo erro que faria a nota ser rejeitada.</p></div>
+<div class="card"><img alt="Programador confere uma tabela de números ao lado do código" class="quem-img" loading="lazy" src="assets/quem-dev.jpg"/><h3>💻 Quem faz sistema</h3><p>A referência oficial para testar o próprio código. Pode usar a licença MIT, sem usar o nome da Receita para dizer que o produto é oficial.</p></div>
 </div>
 </div></section>
 <section id="comecar"><div class="wrap">

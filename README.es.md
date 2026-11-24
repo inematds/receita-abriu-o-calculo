@@ -2,7 +2,9 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![La misma compra, dos cálculos del impuesto nuevo](guia/assets/notas-es.jpg)](https://inematds.github.io/receita-abriu-o-calculo/guia/es/)
+[![La Receita abrió la cuenta](guia/assets/banner-es.jpg)](https://inematds.github.io/receita-abriu-o-calculo/guia/es/)
+
+![La misma compra, dos cuentas del impuesto nuevo](guia/assets/notas-es.jpg)
 
 ## Qué es
 

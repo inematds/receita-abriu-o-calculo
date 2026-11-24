@@ -6,3 +6,4 @@ Logo da Receita só como FONTE, com link para a notícia oficial e a frase de qu
 A imagem das duas contas sai de kit/notas.html (HTML → screenshot), nunca de gerador de imagem.
 
 ## Lessons
+- Guia/explicativo segue a skill projetos-landing-guia INTEIRA, relida na hora de publicar: banner live + grade (PT/EN/ES) e imagem de personagem em cada card de perfil; imagem pedida pelo Nei não substitui o banner (24/11, Nei reprovou os dois).
