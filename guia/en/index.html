@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Brazil’s Federal Revenue Service opened the new tax calculator: the same purchase comes to R$ 56.76 or R$ 72.88</title>
-<meta content="Free, unofficial explainer: Brazil’s Federal Revenue Service opened the program that calculates CBS, IBS, and the Selective Tax. The same purchase with CBS at 8.8% and 11.3%, the November 2026 timeline, and what it means for you." name="description"/>
-<meta content="How much of your money goes to the new tax? The Federal Revenue opened the calculator" property="og:title"/>
-<meta content="The same purchase run through the Federal Revenue’s program: R$ 56.76 or R$ 72.88 in CBS. The difference is the rate the Senate still has to decide." property="og:description"/>
+<title>Brazil's Federal Revenue Service has opened the new tax calculator: the same purchase comes to R$ 56.76 or R$ 72.88</title>
+<meta content="Free, unofficial explainer: Brazil's Federal Revenue Service has opened the program that calculates CBS, IBS, and the Selective Tax. The same purchase with CBS at 8.8% and 11.3%, the November 2026 timeline, and what this means for you." name="description"/>
+<meta content="How much of your money goes to the new tax? Brazil's Federal Revenue Service has opened the calculator" property="og:title"/>
+<meta content="The same purchase calculated with the Federal Revenue Service's program: R$ 56.76 or R$ 72.88 in CBS. The difference is the rate the Senate still has to decide." property="og:description"/>
 <meta content="https://inematds.github.io/receita-abriu-o-calculo/guia/assets/notas-en.jpg" property="og:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -74,7 +74,7 @@
   .hero figure img{width:100%;height:auto;display:block}
   .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
   .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
-  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}.hero figure{order:-1}}
   section{padding:62px 0;border-bottom:1px solid var(--line)}
   section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
   section .sub{color:var(--mut);margin:.6em 0 2em;max-width:66ch}
@@ -117,7 +117,7 @@
   .troca .ex{margin-top:.8em;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--fill);border-radius:10px;padding:12px 16px;font-size:.95rem;color:var(--mut);max-width:76ch}
   .troca .ex b{color:var(--txt)}
   @media(max-width:540px){.troca{grid-template-columns:1fr}}
-  /* three endings */
+  /* three outcomes */
   .vs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;max-width:900px}
   @media(max-width:720px){.vs{grid-template-columns:1fr}}
   .vs div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:.93rem}
@@ -162,10 +162,13 @@
   @media(max-width:720px){.proj{grid-template-columns:1fr}}
   .conta{font-size:1.05rem;max-width:76ch}
   .conta li{margin:6px 0}
+  .selo{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:.85rem;color:var(--mut)}
+  .selo a.lg{background:#fff;border-radius:8px;padding:4px 8px;display:flex}
+  .selo img{height:30px;width:auto;display:block}
 </style>
 <body>
 <nav><div class="wrap">
-<a class="brand" href="#top"><span class="emoji">🧾</span> The Revenue opened the calculator</a>
+<a class="brand" href="#top"><span class="emoji">🧾</span> Federal Revenue opens the calculator</a>
 <span class="sep">|</span>
 <span class="clubpro">
 <a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
@@ -174,131 +177,132 @@
 </span>
 <div class="links">
 <a class="sec" href="#notas">The two calculations</a>
-<a class="sec" href="#acontecendo">What’s happening</a>
+<a class="sec" href="#acontecendo">What's happening</a>
 <a class="sec opt" href="#voce">For you</a>
-<a class="sec" href="#comecar">Try it yourself</a>
+<a class="sec" href="#comecar">Check for yourself</a>
 <a class="sec opt" href="#base">Sources</a>
 <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
 <button aria-label="Toggle theme" class="tgl" id="themeToggle" title="Toggle theme">🌙</button>
-<a class="btn" href="https://github.com/inematds/receita-abriu-o-calculo" rel="noopener" target="_blank">View the code</a>
+<a class="btn" href="https://github.com/inematds/receita-abriu-o-calculo" rel="noopener" target="_blank">Code</a>
 </div>
 </div></nav>
 <header class="hero" id="top">
 <div class="glow"></div>
 <div class="wrap">
 <div>
-<span class="chip">Explainer · source: Brazil’s Federal Revenue Service · INEMA content, unofficial</span>
-<h1>How much of your money goes to the new tax? <span class="amb">The Federal Revenue opened the calculator</span></h1>
-<p class="lead">CBS begins in January 2027: the federal tax replacing PIS and Cofins, built into the price of what you buy. In November, the Federal Revenue opened to the public on GitHub the program it uses to calculate it. We ran the same purchase through it twice, and the results were <strong>R$ 56.76</strong> and <strong>R$ 72.88</strong>. The difference is the rate the Senate still has to decide.</p>
+<div class="selo"><a class="lg" href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank" title="Federal Revenue Service news (in Portuguese)"><img alt="Federal Revenue Service logo" src="../assets/receita-logo.svg"/></a><span>Source: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">Brazil's Federal Revenue Service (in Portuguese)</a> · content by INEMA, unofficial</span></div>
+<span class="chip">Explained</span>
+<h1>How much of your money goes to the new tax? <span class="amb">Brazil's Federal Revenue Service has opened the calculator</span></h1>
+<p class="lead">CBS, the federal tax that replaces PIS and Cofins and is included in the price of what you buy, begins in January 2027. In November, Brazil's Federal Revenue Service made the official calculation program public on GitHub (the site where code is stored). We ran the same purchase through it: the result was <strong>R$ 56.76</strong> at the example test rate of 8.8%, and <strong>R$ 72.88</strong> at 11.3%, the rate recommended by the TCU (Federal Court of Accounts) and still to be voted on by the Senate. To check your sales, we put together the free <strong>Open Calculator</strong> kit.</p>
 <div class="cta">
 <a class="btn" href="#notas">See the two calculations</a>
-<a class="btn ghost" href="#acontecendo">What’s happening</a>
+<a class="btn ghost" href="#acontecendo">What's happening</a>
+<a class="btn ghost" href="#comecar">Check my sales</a>
 </div>
 </div>
-<figure><picture><source media="(max-width:600px)" srcset="../assets/notas-vertical-en.jpg"/><img alt="The same purchase, two new tax calculations: CBS of R$ 56.76 at an 8.8% rate and R$ 72.88 at 11.3%, recommended by the TCU and not yet approved" src="../assets/notas-en.jpg"/></picture></figure>
+<figure><picture><source media="(max-width:600px)" srcset="../assets/notas-vertical-en.jpg"/><img alt="The same purchase, two calculations of the new tax: CBS of R$ 56.76 at 8.8% and R$ 72.88 at 11.3%, recommended by the TCU and not yet approved" src="../assets/notas-en.jpg"/></picture></figure>
 </div>
 </header>
 <main>
 <section class="resumo" id="resumo"><div class="wrap">
 <div class="fonteof">
 <a class="logo" href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank" title="Federal Revenue Service news (in Portuguese)"><img alt="Federal Revenue Service logo" src="../assets/receita-logo.svg"/></a>
-<p><strong>Official source:</strong> <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">“Federal Revenue Service publishes first open-source code on GitHub” (in Portuguese)</a>, news dated 16/11/2026.<small>The logo is here only to show where the news came from. This page is by INEMA: it is not from the Federal Revenue, and the agency has neither reviewed nor endorsed it.</small></p>
+<p><strong>Official source:</strong> <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">"Brazil's Federal Revenue Service publishes its first open-source code on GitHub (in Portuguese)"</a>, news article dated 11/16/2026.<small>The logo is shown only to identify where the news came from. This page is by INEMA: it is not affiliated with the Federal Revenue Service, which has not reviewed or endorsed it.</small></p>
 </div>
-<span class="chip">In a sentence</span>
-<p><strong>The Federal Revenue opened to everyone the program that calculates the new taxes from the tax reform</strong>: CBS (federal, replacing PIS and Cofins), IBS (for states and municipalities), and the Selective Tax (which applies to beverages, cigarettes, and other products). The program had already been available for download through the CBS Platform since 2025; November’s news is that it was opened on GitHub, with every version and fix visible to everyone, so anyone can run it and check the results. This page explains what happened in November, shows the same purchase calculated at the two rates under consideration, and explains what it means for you. Just read on; if you want to run the calculation, see <a href="#comecar">“Try it yourself.”</a></p>
+<span class="chip">In a nutshell</span>
+<p><strong>Brazil's Federal Revenue Service has made public the program that calculates the new taxes under the tax reform</strong>: CBS (federal, replacing PIS and Cofins), IBS (for states and municipalities), and the Selective Tax (which applies to beverages, cigarettes, and other products). The program has been available for download through the CBS Platform since 2025; the November news is that it was published on GitHub, where every version and fix is visible to everyone, and anyone can run it and check the results. This page explains what happened in November, shows the same purchase calculated with the rate in the Federal Revenue Service's example (8.8%, just a test figure) and the rate recommended by the TCU (11.3%, not yet voted on), and explains what this means for you. Just read on; if you want to run the calculation, find out how at <a href="#comecar">"Check for yourself"</a>.</p>
 </div></section>
 <section id="notas"><div class="wrap">
 <span class="chip">The two calculations</span>
-<h2>The same purchase, <span class="amb">R$ 16.12 difference</span></h2>
-<p class="sub">We took the example published by the Federal Revenue in the program documentation and ran it twice, changing just one number: the CBS rate.</p>
+<h2>The same purchase, <span class="amb">R$ 16.12 apart</span></h2>
+<p class="sub">We took the example published by the Federal Revenue Service in the program documentation and ran it twice, changing just one number: the CBS rate.</p>
 <div class="grid g2">
-<div class="card"><h3>🧾 Calculation A: CBS at 8.8% → R$ 56.76</h3><p>This is the rate the Federal Revenue used in its documentation example. It is for testing the program; <strong>it is not a proposed rate</strong>. The total matches the figure published in the official documentation.</p></div>
-<div class="card"><h3>🧾 Calculation B: CBS at 11.3% → R$ 72.88</h3><p>This is the reference rate the TCU (Federal Court of Accounts) calculated for 2027 and submitted to the Senate. <strong>It has not been approved yet.</strong> At this rate, CBS on the same purchase rises by 28%.</p></div>
+<div class="card"><h3>🧾 Calculation A: CBS at 8.8% → R$ 56.76</h3><p>This is the rate used by the Federal Revenue Service in its documentation example. It is for testing the program; <strong>it is not a proposed rate</strong>. The total matches the figure in the official documentation.</p></div>
+<div class="card"><h3>🧾 Calculation B: CBS at 11.3% → R$ 72.88</h3><p>This is the reference rate the TCU (Federal Court of Accounts) calculated for 2027 and submitted to the Senate. <strong>It has not yet been approved.</strong> At this rate, CBS on the same purchase rises by 28%.</p></div>
 </div>
 <div class="card" style="margin-top:16px"><h3>🔎 What the calculation shows, item by item</h3><ul class="conta">
-<li><strong>Basic-basket rice (R$ 100):</strong> zero CBS in both calculations. The law provides a 100% reduction for basic-basket items, so the rate does not matter.</li>
-<li><strong>Beer (R$ 150):</strong> the Selective Tax is applied first (R$ 15), and CBS is calculated on R$ 165. That comes to R$ 14.52 or R$ 18.64.</li>
-<li><strong>School tuition (R$ 1,200):</strong> education gets a 60% rate reduction. That comes to R$ 42.24 or R$ 54.24. The program explains why in Portuguese and cites the law (Art. 129).</li>
-<li><strong>Meat with the wrong product code:</strong> the program does not calculate the tax and warns that the code does not match the classification. This is the kind of error that would get a real invoice rejected.</li>
+<li><strong>Basic food basket rice (R$ 100):</strong> zero CBS in both calculations. The law provides a 100% reduction for the basic food basket, so the rate does not matter.</li>
+<li><strong>Beer (R$ 150):</strong> the Selective Tax is applied first (R$ 15), then CBS is calculated on R$ 165. The result is R$ 14.52 or R$ 18.64.</li>
+<li><strong>School tuition (R$ 1,200):</strong> education gets a 60% rate reduction. The result is R$ 42.24 or R$ 54.24. The program explains the reason in Portuguese and cites the law (Art. 129).</li>
+<li><strong>Meat with the wrong product code:</strong> the program does not calculate it and warns that the code does not match the classification. This kind of error can lead to an invoice being rejected; in a direct calculation, an item like this makes the program reject the entire purchase.</li>
 </ul>
-<p class="fonte">The purchase total is R$ 1,465.00. Both calculations also show R$ 0.64 in IBS, which in 2027 is just a 0.1% test. Run for real on 23/11/2026 using version 1.7.2 of the Federal Revenue program.</p></div>
+<p class="fonte">The purchase total is R$ 1,465.00. Both calculations also show R$ 0.64 in IBS, which in 2027 is just a 0.1% test. Run on 11/23/2026 with version 1.7.2 of the Federal Revenue Service's program.</p></div>
 </div></section>
-<!-- VIDEO: insert the project's explicavideo when published (section #video with 16:9 embed) -->
+<!-- VIDEO: the project's explainer video will go here once published (section #video with 16:9 embed) -->
 <section id="acontecendo"><div class="wrap">
-<span class="chip">What’s happening</span>
+<span class="chip">What's happening</span>
 <h2>November 2026, <span class="amb">in order</span></h2>
-<p class="sub">The tax reform (Complementary Law 214/2025) gradually replaces five consumption taxes with three new ones through 2033. The first major step comes in January. Checked on 24/11/2026.</p>
+<p class="sub">The tax reform (Complementary Law 214/2025) gradually replaces five consumption taxes with three new ones through 2033. The first major step comes in January. Checked on 11/24/2026.</p>
 <div class="prova">
 <ol class="tl">
-<li><b>Oct 28 · TCU calculates the rate: 11.3%</b><br/><span class="mut">The detailed calculation came to 11.3468%, rounded to 11.3%. This is the reference rate: the number that makes revenue from the new taxes match revenue from PIS and Cofins.</span></li>
-<li><b>Nov 9 · Federal Revenue releases the CBS calculation APIs</b><br/><span class="mut">The channels through which companies’ systems will submit debits and credits for the new tax.</span></li>
-<li><b>Nov 10 · The TCU study reaches the Senate</b><br/><span class="mut">The Senate sets the reference rate by resolution, by December 15.</span></li>
-<li><b>Nov 12 and 13 · Ordinance authorizes the code to be opened</b><br/><span class="mut">Ordinance Cotec No. 342 appears in the Federal Official Gazette: it releases three programs under the MIT free software license, records each version’s “fingerprint,” and states that there is no support and that the code has no force of law.</span></li>
-<li><b>Nov 16 · Federal Revenue announces open-source code on GitHub</b><br/><span class="mut">GitHub is a site where programmers store and share code. Now anyone can see the versions and history, and report errors.</span></li>
-<li><b>Nov 17 · Finance Ministry cites an average effective rate of 8.5%</b><br/><span class="mut">That is a different figure: the average actually paid after reductions. It does not mean every price will change by 8.5%.</span></li>
-<li><b>Nov 18 · Senate asks the TCU for its methodology</b><br/><span class="mut">The Economic Affairs Committee approved a request to review the studies behind the 11.3%. Experts presented lower estimates.</span></li>
-<li><b>Nov 18–20 · Both calculators receive new versions</b><br/><span class="mut">The regular-regime calculator (version 1.7.2) fixed rounding: previously, the invoice total could differ from the sum of the items. The Simples Nacional calculator was released in version 1.0.2. Proof that the code is corrected in public.</span></li>
-<li><b>By Dec 15 · Senate decides the rate</b><br/><span class="mut">Once it is announced, calculation B (or another one) will no longer be a simulation.</span></li>
-<li><b>January 2027 · CBS begins</b><br/><span class="mut">It replaces PIS and Cofins. IBS is included only as a 0.1% test, and the Selective Tax takes effect.</span></li>
+<li><b>11/09 · Federal Revenue Service opens CBS reporting channels</b><br/><span class="mut">The channels through which companies' systems will submit debits and credits for the new tax.</span></li>
+<li><b>11/10 · The TCU submits the 11.3% rate to the Senate</b><br/><span class="mut">The detailed calculation came to 11.3468%. This is the reference rate: the figure that keeps the new revenue equal to what PIS and Cofins bring in. The Senate sets it by resolution, by December 15.</span></li>
+<li><b>11/12 and 11/13 · Ordinance authorizes the code release</b><br/><span class="mut">Ordinance Cotec No. 342 appears in the Official Gazette: it releases three programs under the MIT License, records each version's "fingerprint," and states that there is no support and the code has no force of law.</span></li>
+<li><b>11/16 · Federal Revenue Service announces open-source code on GitHub</b><br/><span class="mut">GitHub is the site where programmers store and share code. Now anyone can see the versions and history, and report errors.</span></li>
+<li><b>11/17 · The Finance Ministry cites an 8.5% average effective rate</b><br/><span class="mut">That is a different figure: the average actually paid after reductions. It does not mean every price changes by 8.5%.</span></li>
+<li><b>11/18 · The Senate asks the TCU for its methodology</b><br/><span class="mut">The Economic Affairs Committee approved a request to see the studies behind the 11.3% rate.</span></li>
+<li><b>11/18 to 11/20 · Both calculators receive new versions</b><br/><span class="mut">The regular-regime calculator (version 1.7.2) fixed rounding: before, the invoice total could differ from the sum of its items. The Simples Nacional calculator was released in version 1.0.2. This shows that the code is being corrected in public.</span></li>
+<li><b>By 12/15 · The Senate decides the rate</b><br/><span class="mut">Once decided, Calculation B (or another one) will no longer be a simulation.</span></li>
+<li><b>January 2027 · CBS begins</b><br/><span class="mut">It replaces PIS and Cofins. IBS only comes in as a 0.1% test, and the Selective Tax takes effect.</span></li>
 </ol>
 </div>
 </div></section>
 <section id="voce"><div class="wrap">
 <span class="chip">For you</span>
-<h2>What this changes <span class="amb">for your wallet and your work</span></h2>
+<h2>What this means <span class="amb">for your wallet and your work</span></h2>
 <div class="grid g2">
-<div class="card"><h3>🛒 If you shop</h3><p>CBS is not an extra tax added on top of everything: it replaces PIS and Cofins, which are already included in prices today. What changes is the size of the bill, depending on the rate set by the Senate and the reductions for each product, such as those for rice and schooling in the calculations above.</p></div>
-<div class="card"><h3>🏢 If you sell or run a business</h3><p>Your invoicing system needs to calculate correctly starting in January. Now you can check: run the same sale through your system and the Federal Revenue program, then see whether the figures match.</p></div>
-<div class="card"><h3>📒 Accountants</h3><p>A second opinion independent of the client’s system, with the reason and the law article stated. Useful for reports and for explaining to clients how the calculation came out.</p><p>And a warning before rejection: the “blocked” meat in the calculations above uses a product code (NCM) that does not match the tax classification—the same error that would get the invoice rejected.</p></div>
-<div class="card"><h3>💻 If you build software</h3><p>The official reference for testing your own code. You can use the MIT license, but you cannot use the Federal Revenue’s name to claim your product is official.</p></div>
+<div class="card"><h3>🛒 Shoppers</h3><p>CBS is not an extra tax added on top of everything: it replaces PIS and Cofins, which are already included in prices today. What changes is the amount, which depends on the rate set by the Senate and on each product's reductions, such as those for rice and education in the calculations above.</p></div>
+<div class="card"><h3>🏢 Sellers and business owners</h3><p>Your invoicing system needs to calculate correctly starting in January. Now you can check: run the same sale through your system and the Federal Revenue Service's program, then see whether the figures match.</p></div>
+<div class="card"><h3>📒 Accountants</h3><p>An independent second opinion alongside the client's system, with the reason and the relevant article of law spelled out. Useful for an expert opinion and for explaining to clients why the calculation came out that way.</p><p>And a warning before rejection: the "blocked" meat in the calculations above has a product code (NCM) that does not match its tax classification—the same error that would cause the invoice to be rejected.</p></div>
+<div class="card"><h3>💻 Software developers</h3><p>The official reference for testing your own code. You can use the MIT License, but you cannot use the Federal Revenue Service's name to claim that your product is official.</p></div>
 </div>
 </div></section>
 <section id="comecar"><div class="wrap">
-<span class="chip">Try it yourself</span>
+<span class="chip">Check for yourself</span>
 <h2>Want to run the calculation <span class="amb">on your sales</span>?</h2>
-<p class="sub">We put together a free kit called <strong>Open Calculator</strong> that runs the Federal Revenue’s program on your computer. Ask your AI (Claude Code or Codex) to read the kit; it will run the example above and then compare the results with what your system calculates.</p>
+<p class="sub">Two options: the Federal Revenue Service's online calculator, for one sale at a time with no installation; and the free <strong>Open Calculator</strong> kit, for comparing many sales with your system, with help from AI on your computer (Claude Code or Codex) or your IT team.</p>
+<div class="card" style="margin-bottom:16px"><h3>🌐 No installation: the Federal Revenue Service's online calculator</h3><p>The Federal Revenue Service hosts the same calculator on a website, with no login required. As of 11/24/2026, it was running version 1.7.2, the same as the open-source code. You can calculate one sale at a time, and the information you enter goes to the Federal Revenue Service's website.</p><p style="margin-top:12px"><a class="btn ghost" href="https://piloto-cbs.tributos.gov.br/servico/calculadora-consumo/calculadora" rel="noopener" target="_blank">Open the Federal Revenue Service's online calculator (in Portuguese)</a></p></div>
 <div class="proj">
 <a href="https://inematds.github.io/calculadora-da-reforma/guia/en/" rel="noopener" target="_blank"><img alt="Open Calculator: check whether your system calculates CBS and IBS correctly" loading="lazy" src="../assets/calculadora-en.jpg"/></a>
 <div>
 <h3>🧮 Open Calculator: test the official engine</h3>
-<p>The guide explains, in plain English, how to ask AI to launch the calculator, run both calculations, and compare each item with your system, marking it “same” or “different.”</p>
-<p>It can also help you talk to your IT team or invoicing-system provider.</p>
+<p>The guide explains in plain English how to ask AI to install the calculator, run both calculations, and compare them item by item with your system, marking each one as "same" or "different."</p>
+<p>You can also share it with your IT team or invoicing system provider.</p>
 <p style="margin-top:14px"><a class="btn" href="https://inematds.github.io/calculadora-da-reforma/guia/en/" rel="noopener" target="_blank">Open the Open Calculator guide</a></p>
 </div>
 </div>
-<div class="card" style="margin-top:16px"><h3>🌐 No installation: the Federal Revenue’s online calculator</h3><p>The Federal Revenue keeps the same calculator on a website, with no login required. On 24/11/2026, it was running version 1.7.2, the same as the open-source code. You can calculate one sale at a time, and the information you enter goes to the Federal Revenue’s website.</p><p style="margin-top:12px"><a class="btn ghost" href="https://piloto-cbs.tributos.gov.br/servico/calculadora-consumo/calculadora" rel="noopener" target="_blank">Open the Federal Revenue’s online calculator (in Portuguese)</a></p></div>
 </div></section>
 <section id="base"><div class="wrap">
 <span class="chip">Sources</span>
-<h2>Where <span class="amb">each piece of information</span> comes from</h2>
-<p class="sub">The code belongs to the Federal Revenue and was developed with Serpro, the federal government’s technology company. The explanations and calculations on this page are by INEMA, which is not affiliated with the Federal Revenue.</p>
+<h2>Where <span class="amb">each piece of information comes from</span></h2>
+<p class="sub">The code is from Brazil's Federal Revenue Service, developed with Serpro, the federal government's technology company. The explanations and calculations on this page are by INEMA, which is not affiliated with the Federal Revenue Service.</p>
 <div class="grid g3">
-<div class="card"><h3>📰 The Federal Revenue announcement</h3><p>Why it opened the code: transparency, legal certainty, and an official component for companies to connect to their systems.</p><p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">Federal Revenue news (Nov 16) (in Portuguese)</a></p></div>
-<div class="card"><h3>📜 The ordinance</h3><p>Ordinance Cotec No. 342, dated 12/11/2026: authorizes the release of the three programs and states that they are unsupported and have no force of law.</p><p><a href="https://www.in.gov.br/web/dou/-/portaria-cotec-n-342-de-12-de-novembro-de-2026-744398356" rel="noopener" target="_blank">Federal Official Gazette (in Portuguese)</a></p></div>
-<div class="card"><h3>💾 The code</h3><p><a href="https://github.com/ReceitaFederal/calculadora-rtc-regime-regular" rel="noopener" target="_blank">Regular-regime calculator</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-simples-nacional" rel="noopener" target="_blank">Simples Nacional calculator</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-gerador-danfse" rel="noopener" target="_blank">PDF service-invoice generator</a>.</p></div>
-<div class="card"><h3>⚖️ The 11.3% rate</h3><p>The TCU approves the calculation (Decision 2933/2026, Oct 28), submits the study to the Senate (Nov 10), and the committee asks for the methodology (Nov 18).</p><p><a href="https://www.registrorural.com.br/u/jusrural/tcu-acordao-2933-2026-aliquota-referencia-cbs-2027-11-3-senado-produtor-rural-reducao-60/" rel="noopener" target="_blank">TCU decision (summary) (in Portuguese)</a> · <a href="https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs" rel="noopener" target="_blank">Senate News Agency (in Portuguese)</a> · <a href="https://www.contabeis.com.br/noticias/81063/aliquota-da-cbs-senado-pede-estudos-ao-tcu/" rel="noopener" target="_blank">Contábeis (in Portuguese)</a></p></div>
-<div class="card"><h3>💬 The Finance Ministry’s 8.5%</h3><p>The minister estimates the average effective rate at a Senate hearing (Nov 17).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/17/no-senado-ministro-da-fazenda-defende-novo-tributo-sobre-o-consumo" rel="noopener" target="_blank">Senate News Agency (in Portuguese)</a></p></div>
-<div class="card"><h3>🧪 The two calculations</h3><p>Run by us on 23/11/2026, with the program versions, runtimes, and complete outputs.</p><p><a href="https://github.com/inematds/calculadora-da-reforma/blob/main/kit/MEDICOES.md" rel="noopener" target="_blank">Kit measurements (in Portuguese)</a></p></div>
+<div class="card"><h3>📰 The Federal Revenue Service announcement</h3><p>Why it was released: transparency, legal certainty, and an official component that companies can connect to their systems.</p><p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">Federal Revenue Service news (11/16) (in Portuguese)</a></p></div>
+<div class="card"><h3>📜 The Ordinance</h3><p>Ordinance Cotec No. 342, dated 11/12/2026: authorizes the release of the three programs and says they have no support and no force of law.</p><p><a href="https://www.in.gov.br/web/dou/-/portaria-cotec-n-342-de-12-de-novembro-de-2026-744398356" rel="noopener" target="_blank">Official Gazette of the Union (in Portuguese)</a></p></div>
+<div class="card"><h3>💾 The code</h3><p><a href="https://github.com/ReceitaFederal/calculadora-rtc-regime-regular" rel="noopener" target="_blank">Regular-regime calculator</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-simples-nacional" rel="noopener" target="_blank">Simples Nacional calculator</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-gerador-danfse" rel="noopener" target="_blank">PDF service invoice generator</a>.</p></div>
+<div class="card"><h3>⚖️ The 11.3% rate</h3><p>The TCU submits its study to the Senate (11/10), and the committee asks for the methodology (11/18).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs" rel="noopener" target="_blank">Senate News Agency (in Portuguese)</a> · <a href="https://www.contabeis.com.br/noticias/81063/aliquota-da-cbs-senado-pede-estudos-ao-tcu/" rel="noopener" target="_blank">Contábeis (in Portuguese)</a></p></div>
+<div class="card"><h3>💬 The Finance Ministry's 8.5%</h3><p>The minister estimates the average effective rate at a Senate hearing (11/17).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/17/no-senado-ministro-da-fazenda-defende-novo-tributo-sobre-o-consumo" rel="noopener" target="_blank">Senate News Agency (in Portuguese)</a></p></div>
+<div class="card"><h3>🧪 The two calculations</h3><p>Run by us on 11/23/2026, with the program versions, timings, and full responses.</p><p><a href="https://github.com/inematds/calculadora-da-reforma/blob/main/kit/MEDICOES.md" rel="noopener" target="_blank">Kit measurements (in Portuguese)</a></p></div>
 </div>
 </div></section>
 <section id="faq"><div class="wrap">
 <span class="chip">Common questions</span>
-<h2>Before you <span class="amb">draw conclusions</span></h2>
+<h2>Before you <span class="amb">draw any conclusions</span></h2>
 <div class="grid g2">
 <div class="card"><h3>Will my prices go up by 11.3%?</h3><p>There is no way to say that. CBS replaces PIS and Cofins, which are already included in prices, and many products and services get reductions. The calculation varies from case to case, so it is worth running your own.</p></div>
-<div class="card"><h3>Has the rate already been decided?</h3><p>No. As of 24/11/2026, the Senate had not yet voted. The deadline is December 15. Until then, the program marks the 2027 result as “simulated.”</p></div>
-<div class="card"><h3>What are CBS, IBS, and the Selective Tax?</h3><p>CBS: a federal consumption tax that replaces PIS and Cofins. IBS: the tax for states and municipalities that replaces ICMS and ISS; it only takes full effect in 2029. Selective Tax: an extra tax on products that harm health or the environment, such as alcoholic drinks and cigarettes.</p></div>
-<div class="card"><h3>Does the program’s result have force of law?</h3><p>No. The ordinance itself says the code has no force of law and is unsupported. It is a strong reference for checking calculations; responsibility for the tax remains with whoever issues the invoice.</p></div>
-<div class="card"><h3>Do I need to do anything?</h3><p>If you only shop, no. If you sell, ask your system provider whether it already calculates CBS for 2027, and check a few sales before January.</p></div>
-<div class="card"><h3>How much does it cost?</h3><p>Reading this page, the Federal Revenue’s code, and the Open Calculator kit is free. The easiest way to run it uses Claude Code or Codex, which come with a paid Claude or ChatGPT subscription.</p></div>
+<div class="card"><h3>Has the rate been decided?</h3><p>No. As of 11/24/2026, the Senate had not yet voted. The deadline is December 15. Until then, the program marks the 2027 result as "simulated."</p></div>
+<div class="card"><h3>What are CBS, IBS, and the Selective Tax?</h3><p>CBS: a federal consumption tax that replaces PIS and Cofins. IBS: the tax for states and municipalities, replacing ICMS and ISS, which only takes full effect starting in 2029. Selective Tax: an extra tax on products harmful to health or the environment, such as beverages and cigarettes.</p></div>
+<div class="card"><h3>Does the program's result have the force of law?</h3><p>No. The Ordinance itself says the code has no force of law and comes with no support. It is a strong reference for checking calculations; responsibility for the tax remains with whoever issues the invoice.</p></div>
+<div class="card"><h3>Do I need to do anything?</h3><p>If you only shop, no. If you sell, ask your system provider whether it already calculates the 2027 CBS, and check a few sales before January.</p></div>
+<div class="card"><h3>How much does it cost?</h3><p>This page, the Federal Revenue Service's code, and the Open Calculator kit are free. The easiest way to run it uses Claude Code or Codex, which come with a paid Claude or ChatGPT subscription.</p></div>
 </div>
-<p class="fonte" style="margin-top:22px">What about you: do you know how much of what you buy goes to taxes, or will you find out only when you see your January invoice? Free at inema.club, right on the internet.</p>
+<p class="fonte" style="margin-top:22px">And you: do you know how much of the price you pay is tax, or will you find out only when you get your January invoice? Free at inema.club, right on the internet.</p>
 </div></section>
 </main>
 <footer>
 <div class="wrap">
-<div class="pill">Source: Federal Revenue open-source code</div><div class="pill">Free, unofficial explainer</div><div class="pill">PT · EN · ES</div>
-<p style="margin-top:18px">The Revenue Opened the Calculator · unofficial INEMA explainer about the Federal Revenue’s open-source code · Free at inema.club, right on the internet ·
+<div class="pill">Source: Federal Revenue Service open-source code</div><div class="pill">Free, unofficial explainer</div><div class="pill">PT · EN · ES</div>
+<p style="margin-top:18px">Federal Revenue opens the calculator · unofficial INEMA explainer about the Federal Revenue Service's open-source code · free at inema.club, right on the internet ·
       <a href="https://github.com/inematds/receita-abriu-o-calculo">inematds/receita-abriu-o-calculo</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
 </div>
