@@ -6,7 +6,7 @@
 
 ## O que é
 
-Um explicativo grátis e não oficial do INEMA sobre o que aconteceu em novembro de 2026: a Receita Federal abriu para todo mundo o programa que calcula os impostos novos da reforma tributária (CBS, IBS e Imposto Seletivo). A página mostra a mesma compra calculada nesse programa com as duas alíquotas que estão na mesa (8,8% do exemplo oficial e 11,3% recomendada pelo TCU, ainda não aprovada), conta a linha do tempo de novembro e diz o que muda para quem compra, vende, faz contabilidade ou faz sistema. É só ler.
+Um explicativo grátis e não oficial do INEMA sobre o que aconteceu em novembro de 2026: a Receita Federal abriu em público, no GitHub, o programa que calcula os impostos novos da reforma tributária (CBS, IBS e Imposto Seletivo). A página mostra a mesma compra calculada nesse programa com as duas alíquotas que estão na mesa (8,8% do exemplo oficial e 11,3% recomendada pelo TCU, ainda não aprovada), conta a linha do tempo de novembro e diz o que muda para quem compra, vende, faz contabilidade ou faz sistema. É só ler.
 
 ## 📖 Página
 

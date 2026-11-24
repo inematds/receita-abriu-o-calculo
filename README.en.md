@@ -6,7 +6,7 @@
 
 ## What it is
 
-A free, unofficial INEMA explainer about what happened in November 2026: the Receita Federal opened to everyone the program that calculates the new taxes under the tax reform (CBS, IBS, and the Selective Tax). The page shows the same purchase calculated in that program using the two rates under discussion (8.8% from the official example and 11.3% recommended by the TCU, not yet approved), tells the November timeline, and explains what changes for people who buy, sell, do accounting, or build software. Just read it.
+A free, unofficial INEMA explainer about what happened in November 2026: the Receita Federal publicly opened, on GitHub, the program that calculates the new taxes under the tax reform (CBS, IBS, and the Selective Tax). The page shows the same purchase calculated in that program using the two rates under discussion (8.8% from the official example and 11.3% recommended by the TCU, not yet approved), tells the November timeline, and explains what changes for people who buy, sell, do accounting, or build software. Just read it.
 
 ## 📖 Page
 

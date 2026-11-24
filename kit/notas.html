@@ -28,6 +28,14 @@
   .foot{position:absolute;left:60px;right:60px;bottom:30px;display:flex;justify-content:space-between;font-size:17px;color:#a8a8b3}
   .foot b{color:#FACC15;font-family:Sora}
   .diff{font-size:28px!important;padding:12px 22px!important;position:absolute;left:50%;top:650px;transform:translateX(-50%);background:#FACC15;color:#1a1206;font:800 22px Sora,sans-serif;padding:10px 16px;border-radius:12px;z-index:2;white-space:nowrap;box-shadow:0 10px 30px -8px #000}
+  html{background:#0c0c10}
+  body.v{width:760px;height:auto;padding:44px 40px 34px;overflow:visible}
+  body.v h1,body.v .sub,body.v .row,body.v .diff,body.v .foot{position:static;transform:none}
+  body.v h1{font-size:42px}
+  body.v .sub{margin:14px 0 28px;font-size:19px}
+  body.v .row{flex-direction:column;gap:28px;align-items:stretch}
+  body.v .diff{display:inline-block;margin:30px 0 0}
+  body.v .foot{margin-top:30px;font-size:16px;flex-direction:column;gap:8px}
 </style>
 </head>
 <body>
@@ -67,6 +75,7 @@ var L={
   it:['Arroz de la canasta básica · R$ 100','Cerveza · R$ 150 (+ R$ 15 de Impuesto Selectivo)','Mensualidad escolar · R$ 1.200','Carne con código erróneo'],
   x:'bloqueada',tot:'CBS total',d:'+ R$ 16,12 en la misma compra',f:'Base de la compra: R$ 1.465,00 · IBS de prueba: R$ 0,64 en ambas · medido el 23/11/2026'}
 };
+if(new URLSearchParams(location.search).get('v'))document.body.classList.add('v');
 var lg=(new URLSearchParams(location.search).get('lang'))||'pt', T=L[lg]||L.pt;
 var dec=lg==='en'?'.':',';
 function v(x){return 'R$ '+x.replace(',',dec)}

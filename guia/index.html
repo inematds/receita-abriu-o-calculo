@@ -180,7 +180,7 @@
 <a class="sec opt" href="#base">Fontes</a>
 <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
 <button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
-<a class="btn" href="https://github.com/inematds/receita-abriu-o-calculo" rel="noopener" target="_blank">GitHub</a>
+<a class="btn" href="https://github.com/inematds/receita-abriu-o-calculo" rel="noopener" target="_blank">Ver o código</a>
 </div>
 </div></nav>
 <header class="hero" id="top">
@@ -189,13 +189,13 @@
 <div>
 <span class="chip">Explicado · fonte: Receita Federal · conteúdo do INEMA, não oficial</span>
 <h1>Quanto do seu dinheiro vai para o imposto novo? <span class="amb">A Receita abriu a conta</span></h1>
-<p class="lead">Em janeiro de 2027 começa a CBS, o imposto federal que vai embutido no preço do que você compra. Em novembro a Receita Federal liberou o programa que ela mesma usa para fazer essa conta. Nós rodamos a mesma compra nele duas vezes e saíram <strong>R$ 56,76</strong> e <strong>R$ 72,88</strong>. A diferença é a alíquota, que o Senado ainda vai decidir.</p>
+<p class="lead">Em janeiro de 2027 começa a CBS, o imposto federal que entra no lugar do PIS e da Cofins, embutido no preço do que você compra. Em novembro a Receita Federal abriu em público, no GitHub, o programa que ela mesma usa para fazer essa conta. Nós rodamos a mesma compra nele duas vezes e saíram <strong>R$ 56,76</strong> e <strong>R$ 72,88</strong>. A diferença é a alíquota, que o Senado ainda vai decidir.</p>
 <div class="cta">
 <a class="btn" href="#notas">Ver as duas contas</a>
 <a class="btn ghost" href="#acontecendo">O que está acontecendo</a>
 </div>
 </div>
-<figure><img alt="A mesma compra, duas contas do imposto novo: CBS de R$ 56,76 com alíquota de 8,8% e R$ 72,88 com 11,3%" src="assets/notas.jpg"/></figure>
+<figure><picture><source media="(max-width:600px)" srcset="assets/notas-vertical.jpg"/><img alt="A mesma compra, duas contas do imposto novo: CBS de R$ 56,76 com alíquota de 8,8% e R$ 72,88 com 11,3%, recomendada pelo TCU e ainda não aprovada" src="assets/notas.jpg"/></picture></figure>
 </div>
 </header>
 <main>
@@ -205,7 +205,7 @@
 <p><strong>Fonte oficial:</strong> <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">"Receita Federal publica primeiro código-fonte aberto no GitHub"</a>, notícia de 16/11/2026.<small>O logotipo está aqui só para mostrar de onde vem a notícia. Esta página é do INEMA: não é da Receita, e a Receita não a revisou nem a endossa.</small></p>
 </div>
 <span class="chip">Em uma frase</span>
-<p><strong>A Receita Federal abriu para todo mundo o programa que calcula os impostos novos da reforma tributária</strong>: a CBS (federal, no lugar do PIS e da Cofins), o IBS (de estados e municípios) e o Imposto Seletivo (o que pesa sobre bebida, cigarro e outros produtos). Antes, essa conta ficava dentro dos sistemas das empresas e ninguém de fora via. Agora qualquer pessoa pode baixar, rodar e conferir. Esta página explica o que aconteceu em novembro, mostra a mesma compra calculada com as duas alíquotas que estão na mesa e diz o que isso muda para você. É só ler; quem quiser rodar a conta encontra o caminho em <a href="#comecar">"Confira você mesmo"</a>.</p>
+<p><strong>A Receita Federal abriu para todo mundo o programa que calcula os impostos novos da reforma tributária</strong>: a CBS (federal, no lugar do PIS e da Cofins), o IBS (de estados e municípios) e o Imposto Seletivo (o que pesa sobre bebida, cigarro e outros produtos). O programa já podia ser baixado pela Plataforma CBS desde 2025; a novidade de novembro é que ele foi aberto no GitHub, com cada versão e cada correção à vista de todos, e qualquer pessoa pode rodar e conferir. Esta página explica o que aconteceu em novembro, mostra a mesma compra calculada com as duas alíquotas que estão na mesa e diz o que isso muda para você. É só ler; quem quiser rodar a conta encontra o caminho em <a href="#comecar">"Confira você mesmo"</a>.</p>
 </div></section>
 <section id="notas"><div class="wrap">
 <span class="chip">As duas contas</span>
@@ -237,7 +237,7 @@
 <li><b>16/11 · Receita anuncia o código aberto no GitHub</b><br/><span class="mut">GitHub é o site onde os programadores guardam e compartilham código. Agora qualquer pessoa vê as versões, o histórico e pode apontar erros.</span></li>
 <li><b>17/11 · Fazenda fala em 8,5% de alíquota efetiva média</b><br/><span class="mut">É outro número: a média do que de fato se paga depois das reduções. Não quer dizer que todo preço muda 8,5%.</span></li>
 <li><b>18/11 · Senado pede ao TCU a metodologia</b><br/><span class="mut">A Comissão de Assuntos Econômicos aprovou pedido para ver os estudos por trás dos 11,3%. Especialistas apresentaram estimativas menores.</span></li>
-<li><b>19 e 20/11 · O programa já ganhou versões novas</b><br/><span class="mut">Uma correção de arredondamento: antes, o total da nota podia não bater com a soma dos itens. Prova de que o código vivo é corrigido em público.</span></li>
+<li><b>18 a 20/11 · As duas calculadoras já ganharam versões novas</b><br/><span class="mut">A do regime regular (versão 1.7.2) corrigiu o arredondamento: antes, o total da nota podia não bater com a soma dos itens. A do Simples Nacional saiu na versão 1.0.2. Prova de que o código é corrigido em público.</span></li>
 <li><b>Até 15/12 · Senado decide a alíquota</b><br/><span class="mut">Quando sair, a conta B (ou outra) deixa de ser simulação.</span></li>
 <li><b>Janeiro de 2027 · A CBS começa</b><br/><span class="mut">No lugar do PIS e da Cofins. O IBS entra só como teste de 0,1%, e o Imposto Seletivo começa a valer.</span></li>
 </ol>
@@ -249,7 +249,7 @@
 <div class="grid g2">
 <div class="card"><h3>🛒 Quem compra</h3><p>A CBS não é um imposto a mais por cima de tudo: ela entra no lugar do PIS e da Cofins, que já estão no preço hoje. O que muda é o tamanho da conta, e isso depende da alíquota que o Senado fixar e das reduções de cada produto, como as do arroz e da escola nas contas acima.</p></div>
 <div class="card"><h3>🏢 Quem vende ou tem empresa</h3><p>O sistema que emite as suas notas precisa calcular certo a partir de janeiro. Agora dá para conferir: a mesma venda no seu sistema e no programa da Receita, e ver se o valor bate.</p></div>
-<div class="card"><h3>📒 Contador</h3><p>Uma segunda opinião independente do sistema do cliente, com o motivo escrito e o artigo da lei. Bom para parecer e para explicar ao cliente por que a conta deu aquilo.</p></div>
+<div class="card"><h3>📒 Contador</h3><p>Uma segunda opinião independente do sistema do cliente, com o motivo escrito e o artigo da lei. Bom para parecer e para explicar ao cliente por que a conta deu aquilo.</p><p>E o alerta antes da rejeição: a carne "barrada" nas contas acima é o código do produto (NCM) que não combina com a classificação do imposto, o mesmo erro que faria a nota ser rejeitada.</p></div>
 <div class="card"><h3>💻 Quem faz sistema</h3><p>A referência oficial para testar o próprio código. Pode usar a licença MIT, sem usar o nome da Receita para dizer que o produto é oficial.</p></div>
 </div>
 </div></section>
@@ -276,7 +276,7 @@
 <div class="card"><h3>📰 O anúncio da Receita</h3><p>Por que abriu: transparência, segurança jurídica e um componente oficial para as empresas ligarem nos seus sistemas.</p><p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" rel="noopener" target="_blank">Notícia da Receita Federal (16/11)</a></p></div>
 <div class="card"><h3>📜 A Portaria</h3><p>Portaria Cotec nº 342, de 12/11/2026: autoriza abrir os três programas e diz que não há suporte nem efeito de lei.</p><p><a href="https://www.in.gov.br/web/dou/-/portaria-cotec-n-342-de-12-de-novembro-de-2026-744398356" rel="noopener" target="_blank">Diário Oficial da União</a></p></div>
 <div class="card"><h3>💾 O código</h3><p><a href="https://github.com/ReceitaFederal/calculadora-rtc-regime-regular" rel="noopener" target="_blank">Calculadora do regime regular</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-simples-nacional" rel="noopener" target="_blank">do Simples Nacional</a> · <a href="https://github.com/ReceitaFederal/calculadora-rtc-gerador-danfse" rel="noopener" target="_blank">gerador da nota de serviço em PDF</a>.</p></div>
-<div class="card"><h3>⚖️ A alíquota de 11,3%</h3><p>O TCU entrega ao Senado o estudo (10/11) e a comissão pede a metodologia (18/11).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs" rel="noopener" target="_blank">Agência Senado</a> · <a href="https://www.contabeis.com.br/noticias/81063/aliquota-da-cbs-senado-pede-estudos-ao-tcu/" rel="noopener" target="_blank">Contábeis</a></p></div>
+<div class="card"><h3>⚖️ A alíquota de 11,3%</h3><p>O TCU aprova o cálculo (Acórdão 2933/2026, 28/10), entrega o estudo ao Senado (10/11) e a comissão pede a metodologia (18/11).</p><p><a href="https://www.registrorural.com.br/u/jusrural/tcu-acordao-2933-2026-aliquota-referencia-cbs-2027-11-3-senado-produtor-rural-reducao-60/" rel="noopener" target="_blank">Acórdão do TCU (resumo)</a> · <a href="https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs" rel="noopener" target="_blank">Agência Senado</a> · <a href="https://www.contabeis.com.br/noticias/81063/aliquota-da-cbs-senado-pede-estudos-ao-tcu/" rel="noopener" target="_blank">Contábeis</a></p></div>
 <div class="card"><h3>💬 Os 8,5% da Fazenda</h3><p>O ministro estima a alíquota efetiva média numa audiência no Senado (17/11).</p><p><a href="https://www12.senado.leg.br/noticias/materias/2026/11/17/no-senado-ministro-da-fazenda-defende-novo-tributo-sobre-o-consumo" rel="noopener" target="_blank">Agência Senado</a></p></div>
 <div class="card"><h3>🧪 As duas contas</h3><p>Rodadas por nós em 23/11/2026, com as versões, os tempos e as respostas completas do programa.</p><p><a href="https://github.com/inematds/calculadora-da-reforma/blob/main/kit/MEDICOES.md" rel="noopener" target="_blank">Medições do kit</a></p></div>
 </div>
