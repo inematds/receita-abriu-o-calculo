@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Preço e contador</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#0c0c10}
+  body{width:1400px;height:820px;color:#e9e9ee;font-family:Inter,sans-serif;position:relative;overflow:hidden;padding:44px 60px 0}
+  .glow{position:absolute;inset:-30% auto auto -10%;width:70%;height:700px;background:radial-gradient(closest-side,rgba(250,204,21,.14),transparent 70%);z-index:-1}
+  h1{font:800 44px/1.1 Sora,sans-serif;letter-spacing:-.02em;margin:0}
+  h1 b{color:#FACC15}
+  .sub{font-size:20px;color:#a8a8b3;margin:12px 0 30px}
+  .row{display:flex;gap:36px;align-items:stretch}
+  .col{flex:1}
+  .tag{font:600 15px Sora,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#a8a8b3;margin-bottom:14px}
+  .tl{position:relative;padding-left:34px}
+  .tl:before{content:"";position:absolute;left:10px;top:8px;bottom:8px;width:3px;background:linear-gradient(#FACC15,#3a3a44)}
+  .ev{position:relative;margin-bottom:22px}
+  .ev:before{content:"";position:absolute;left:-31px;top:6px;width:18px;height:18px;border-radius:50%;background:#0c0c10;border:3px solid #FACC15}
+  .ev .y{font:800 30px Sora,sans-serif;color:#FACC15}
+  .ev .d{font-size:19px;line-height:1.35;margin-top:2px}
+  .ev .d small{display:block;color:#a8a8b3;font-size:16px;margin-top:3px}
+  .warn{margin-top:6px;background:#1a1a20;border:1px solid #2a2a33;border-left:5px solid #FACC15;border-radius:8px;padding:14px 18px;font-size:18px;line-height:1.35}
+  .warn b{color:#FACC15}
+  .nota{background:#f4f1e8;color:#1b1b22;border-radius:6px;padding:22px 26px;box-shadow:0 30px 70px -20px #000}
+  .nota .tag{color:#6b6b76}
+  .tr{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-top:1px dashed #b9b4a6}
+  .tr:first-of-type{border-top:0;padding-top:4px}
+  .x{flex:none;width:44px;height:44px;border-radius:50%;background:#dc2626;color:#fff;font:800 26px/44px Sora,sans-serif;text-align:center}
+  .tr b{font:800 21px Sora,sans-serif;display:block}
+  .tr span{font-size:17px;color:#444;line-height:1.35;display:block;margin-top:3px}
+  .tr code{font:600 16px "JetBrains Mono",monospace;background:#e6e1d2;padding:1px 6px;border-radius:4px}
+  .big{margin-top:14px;border-top:2px solid #1b1b22;padding-top:16px;font:800 24px/1.25 Sora,sans-serif}
+  .big small{display:block;font:400 17px Inter,sans-serif;color:#444;margin-top:6px}
+  .foot{position:absolute;left:60px;right:60px;bottom:26px;display:flex;justify-content:space-between;gap:30px;font-size:16px;color:#a8a8b3}
+  .foot b{color:#FACC15;font-family:Sora;white-space:nowrap}
+  body.v{width:760px;height:auto;padding:44px 36px 34px;overflow:visible}
+  body.v h1{font-size:38px}
+  body.v .sub{font-size:18px}
+  body.v .row{flex-direction:column;gap:34px}
+  body.v .foot{position:static;margin-top:30px;flex-direction:column;gap:8px;font-size:15px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<h1 id="t"></h1>
+<div class="sub" id="s"></div>
+<div class="row">
+  <div class="col">
+    <div class="tag" id="ta"></div>
+    <div class="tl" id="tl"></div>
+    <div class="warn" id="w"></div>
+  </div>
+  <div class="col nota">
+    <div class="tag" id="tb"></div>
+    <div id="tr"></div>
+    <div class="big" id="bg"></div>
+  </div>
+</div>
+<div class="foot"><span id="f"></span><b>INEMA.CLUB</b></div>
+<script>
+var L={
+ pt:{t:'O preço muda aos poucos. <b>O cadastro tem que estar certo já em janeiro.</b>',
+  s:'O que a mesma nota de mercado de 121 itens mostra para quem compra e para o contador',
+  ta:'Quando o preço pode mexer',
+  tl:[['2027','PIS e Cofins saem, a CBS entra','troca de um imposto pelo outro, não um a mais'],
+      ['2029–2032','O ICMS cai e o IBS sobe','a mudança maior vem aos poucos'],
+      ['2033','Sistema novo completo','uma regra só, com crédito amplo']],
+  w:'<b>Margem só sobre o custo sem imposto.</b> Quem põe margem em cima da CBS sobe o preço sem motivo.',
+  tb:'3 armadilhas achadas nesta nota',
+  tr:[['Código do frango extinto','<code>0207.14.00</code> não existe mais em 2027: o programa recusa o item'],
+      ['Conserva não tem a redução','milho e ervilha em lata levam sal, então pagam a alíquota cheia'],
+      ['Pão de alho não é cesta','o código é o mesmo do pão francês, mas a alíquota zero vale só para ele']],
+  bg:'121 itens, 3 armadilhas.<small>Um mercado tem milhares de produtos, e cada um precisa do código e do enquadramento certos.</small>',
+  f:'Nota real rodada no programa da Receita (versão 1.7.2) em 24/11/2026 · simulação · alíquota de 2027 ainda não definida'},
+ en:{"t": "Prices change gradually. <b>Product records must be correct by January.</b>", "s": "What the same 121-item grocery receipt shows shoppers and accountants", "ta": "When prices may change", "tl": [["2027", "PIS and Cofins end, CBS takes effect", "one tax replaces another; it is not an additional tax"], ["2029–2032", "ICMS decreases and IBS increases", "the bigger change comes gradually"], ["2033", "New system fully in place", "one rule, with broad credits"]], "w": "<b>Calculate the margin only on the cost without tax.</b> Adding a margin on top of CBS raises prices for no reason.", "tb": "3 pitfalls found on this receipt", "tr": [["Discontinued chicken code", "<code>0207.14.00</code> no longer exists in 2027: the program rejects the item"], ["Preserved vegetables do not get the reduction", "canned corn and peas contain salt, so they pay the full rate"], ["Garlic bread is not part of the basic food basket", "it has the same code as French bread, but the zero rate applies only to French bread"]], "bg": "121 items, 3 pitfalls.<small>A grocery store has thousands of products, and each one needs the correct code and tax classification.</small>", "f": "Real receipt run through the Federal Revenue program (version 1.7.2) on 11/24/2026 · simulation · 2027 rate not yet defined"},
+ es:{"t": "Los precios cambian poco a poco. <b>El registro de productos debe estar correcto desde enero.</b>", "s": "Lo que la misma nota del supermercado de 121 artículos muestra a quienes compran y al contador", "ta": "Cuándo pueden cambiar los precios", "tl": [["2027", "Terminan el PIS y la Cofins, entra la CBS", "un impuesto sustituye a otro; no se suma uno más"], ["2029–2032", "Baja el ICMS y sube el IBS", "el mayor cambio llega poco a poco"], ["2033", "Nuevo sistema completo", "una sola regla, con crédito amplio"]], "w": "<b>El margen se calcula solo sobre el costo sin impuesto.</b> Quien agrega un margen sobre la CBS sube el precio sin motivo.", "tb": "3 trampas encontradas en esta nota", "tr": [["Código del pollo eliminado", "<code>0207.14.00</code> ya no existe en 2027: el programa rechaza el artículo"], ["La conserva no tiene la reducción", "el maíz y los chícharos en lata llevan sal, así que pagan la alícuota plena"], ["El pan de ajo no forma parte de la canasta", "tiene el mismo código que el pan francés, pero la alícuota cero solo se aplica a este último"]], "bg": "121 artículos, 3 trampas.<small>Un supermercado tiene miles de productos, y cada uno necesita el código y la clasificación correctos.</small>", "f": "Nota real procesada en el programa de la Receita Federal (versión 1.7.2) el 24/11/2026 · simulación · alícuota de 2027 aún no definida"}
+};
+var qs=new URLSearchParams(location.search);
+if(qs.get('v'))document.body.classList.add('v');
+var lg=qs.get('lang')||'pt',T=L[lg]||L.pt;
+document.getElementById('t').innerHTML=T.t;
+['s','ta','tb','f'].forEach(function(k){document.getElementById(k).textContent=T[k]});
+document.getElementById('w').innerHTML=T.w;document.getElementById('bg').innerHTML=T.bg;
+document.getElementById('tl').innerHTML=T.tl.map(function(e){return '<div class="ev"><div class="y">'+e[0]+'</div><div class="d">'+e[1]+'<small>'+e[2]+'</small></div></div>'}).join('');
+document.getElementById('tr').innerHTML=T.tr.map(function(e){return '<div class="tr"><div class="x">✕</div><div><b>'+e[0]+'</b><span>'+e[1]+'</span></div></div>'}).join('');
+</script>
+</body>
+</html>

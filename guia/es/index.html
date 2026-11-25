@@ -178,7 +178,7 @@
 </span>
 <div class="links">
 <a class="sec" href="#notas">Los dos cálculos</a>
-<a class="sec" href="#janeiro">En enero</a>
+<a class="sec" href="#janeiro">En enero</a><a class="sec" href="#preco">Precio y contador</a>
 <a class="sec" href="#acontecendo">Qué está pasando</a>
 <a class="sec opt" href="#voce">Para ti</a>
 <a class="sec" href="#comecar">Compruébalo tú mismo</a>
@@ -250,6 +250,30 @@
 <p>La CBS no se suma al precio de hoy: reemplaza al PIS y a la Cofins, que ya están incluidos en esos R$ 1.512,15. El cálculo muestra cuánto de la compra pasa a ser CBS, con el nombre de cada impuesto indicado artículo por artículo.</p>
 <p class="fonte">El comprobante no incluye el código fiscal (NCM) de los productos: INEMA eligió el código de cada uno y verificó su clasificación en la tabla del propio programa. Supusimos un supermercado en el régimen normal de impuestos (el cálculo es distinto en el Simples Nacional) y usamos el valor de cada renglón del comprobante como base. En ambos cálculos también aparece R$ 0,70 de IBS, la prueba del 0,1% para 2027. Es una simulación, no un comprobante fiscal. Ejecutado el 24/11/2026, con la versión 1.7.2 del programa de la Receita Federal; la entrada y la respuesta del programa están en el kit, en <a href="https://github.com/inematds/calculadora-da-reforma/tree/main/kit/exemplos" rel="noopener" target="_blank">kit/exemplos</a>.</p>
 </div>
+</div></section>
+<section id="preco"><div class="wrap">
+<span class="chip">Precios y contabilidad</span>
+<h2>Qué cambia en el precio <span class="amb">y el trabajo de quien hace las cuentas</span></h2>
+<p class="sub">La misma nota del supermercado del ejemplo anterior muestra dos cosas: dónde pueden cambiar los precios y dónde el contador tendrá que dedicar tiempo.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="../assets/preco-contador-vertical-es.jpg"/><img style="width:100%;display:block" alt="Cronología de los precios: en 2027 terminan el PIS y la Cofins y entra la CBS; de 2029 a 2032 baja el ICMS y sube el IBS; en 2033 el nuevo sistema queda completo; y las 3 trampas encontradas en la nota: código del pollo eliminado, conserva sin reducción por la sal y pan de ajo que no forma parte de la canasta básica" src="../assets/preco-contador-es.jpg"/></picture></figure>
+<div class="grid g2">
+<div class="card"><h3>🛒 Qué puede cambiar en los precios y cuándo</h3><ul class="conta">
+<li><strong>Enero de 2027:</strong> terminan el PIS y la Cofins y la CBS los reemplaza. No es un impuesto adicional sobre el precio: un impuesto sustituye a otro.</li>
+<li><strong>La canasta básica debería quedar igual:</strong> en la nota, R$ 396,04 de compras salieron con CBS en cero. Muchos de estos productos ya no pagan PIS ni Cofins actualmente.</li>
+<li><strong>El resto depende de la alícuota:</strong> la del Senado solo se conocerá hasta el 15/12. Si la alícuota es parecida a lo que se paga hoy, los precios cambiarán poco. Si es más alta, subirán los artículos con alícuota plena, como la leche condensada y la crema de leche de la nota.</li>
+<li><strong>De 2029 a 2032:</strong> el ICMS irá bajando y el IBS irá subiendo. El mayor cambio en los precios llegará poco a poco, hasta que el nuevo sistema esté completo en 2033.</li>
+<li><strong>¿Y el margen del supermercado?</strong> El impuesto que el supermercado paga al comprar vuelve como crédito. Si calcula el margen sobre el costo con el impuesto incluido, cobra un margen sobre el impuesto y el precio sube sin motivo. Lo correcto es calcular el margen sobre el costo sin impuesto y sumar la CBS al final.</li>
+</ul></div>
+<div class="card"><h3>🧮 Para el contador: qué es fácil y qué lleva trabajo</h3><ul class="conta">
+<li><strong>Fácil: el cálculo.</strong> El sistema de la nota calcula la CBS artículo por artículo y explica el motivo con el artículo de la ley. Los 121 artículos de esta nota se procesaron en el programa de la Receita Federal en menos de un segundo.</li>
+<li><strong>Fácil: verificar.</strong> El contador procesa las ventas del cliente en el programa abierto de la Receita Federal y comprueba si el sistema de la tienda calculó lo mismo.</li>
+<li><strong>Lleva trabajo: clasificar cada producto.</strong> Solo en esta nota aparecieron tres trampas. El código del pollo que usamos al principio ya no existirá en 2027. El maíz y los chícharos en lata parecen tener la reducción, pero no la tienen por la sal. El pan de ajo y la gelatina corresponden a códigos vinculados con la canasta, pero la regla solo se aplica al pan francés y a la fórmula infantil. Un supermercado tiene miles de productos.</li>
+<li><strong>Lleva trabajo: la transición.</strong> De 2027 a 2032 convivirán la CBS, el ICMS y el IBS, que irá subiendo poco a poco. Serán dos formas de calcular al mismo tiempo.</li>
+<li><strong>Lleva trabajo: el Simples Nacional.</strong> El cliente del Simples Nacional puede pagar la CBS y el IBS dentro del Simples o por separado. Pagar por separado puede convenir a quienes venden a otras empresas, que aprovechan el crédito. Es un cálculo para cada cliente.</li>
+</ul></div>
+</div>
+<p>En resumen: 2026 y 2027 exigirán bastante trabajo, sobre todo para registrar los productos. Después habrá una sola regla, con crédito amplio, y el día a día tenderá a ser más sencillo que con el PIS y la Cofins actuales. La prueba de la hoja de cálculo del kit muestra, artículo por artículo, dónde el sistema de la tienda calculó algo distinto al programa de la Receita Federal.</p>
+<p class="fonte">Las tres trampas salieron de la nota del ejemplo anterior, procesada el 24/11/2026 con la versión 1.7.2 del programa de la Receita Federal. Lo que puede pasar con los precios es una interpretación de las reglas de la ley, no una previsión: cada tienda decide sus propios precios.</p>
 </div></section>
 
 <!-- VIDEO: entra o explicavideo do projeto quando publicado (seção #video com embed 16:9) -->

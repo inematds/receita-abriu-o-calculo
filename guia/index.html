@@ -178,7 +178,7 @@
 </span>
 <div class="links">
 <a class="sec" href="#notas">As duas contas</a>
-<a class="sec" href="#janeiro">Em janeiro</a>
+<a class="sec" href="#janeiro">Em janeiro</a><a class="sec" href="#preco">Preço e contador</a>
 <a class="sec" href="#acontecendo">O que está acontecendo</a>
 <a class="sec opt" href="#voce">Para você</a>
 <a class="sec" href="#comecar">Confira você mesmo</a>
@@ -250,6 +250,30 @@
 <p>A CBS não vem por cima do preço de hoje: ela entra no lugar do PIS e da Cofins, que já estão embutidos nesses R$ 1.512,15. A conta mostra quanto da compra passa a ser CBS, com o nome de cada imposto escrito item por item.</p>
 <p class="fonte">A nota não traz o código fiscal (NCM) dos produtos: o INEMA escolheu o código de cada um e conferiu o enquadramento na tabela do próprio programa. Supusemos um mercado no regime normal de impostos (no Simples Nacional a conta é outra) e usamos o valor de cada linha da nota como base. Nas duas contas sai também R$ 0,70 de IBS, o teste de 0,1% de 2027. Simulação, não é nota fiscal. Rodado em 24/11/2026, com a versão 1.7.2 do programa da Receita; entrada e resposta do programa estão no kit, em <a href="https://github.com/inematds/calculadora-da-reforma/tree/main/kit/exemplos" rel="noopener" target="_blank">kit/exemplos</a>.</p>
 </div>
+</div></section>
+<section id="preco"><div class="wrap">
+<span class="chip">Preço e contador</span>
+<h2>O que muda no preço, <span class="amb">e o trabalho de quem faz a conta</span></h2>
+<p class="sub">A mesma nota de mercado do exemplo acima mostra duas coisas: onde o preço pode mexer e onde o contador vai gastar tempo.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="assets/preco-contador-vertical.jpg"/><img style="width:100%;display:block" alt="Linha do tempo do preço: em 2027 o PIS e a Cofins saem e a CBS entra, de 2029 a 2032 o ICMS cai e o IBS sobe, em 2033 o sistema novo fica completo; e as 3 armadilhas achadas na nota: código do frango extinto, conserva sem a redução por causa do sal e pão de alho que não é cesta" src="assets/preco-contador.jpg"/></picture></figure>
+<div class="grid g2">
+<div class="card"><h3>🛒 O que pode mudar no preço, e quando</h3><ul class="conta">
+<li><strong>Janeiro de 2027:</strong> o PIS e a Cofins acabam e a CBS entra no lugar. Não é um imposto a mais por cima do preço, é a troca de um pelo outro.</li>
+<li><strong>A cesta básica tende a ficar igual:</strong> na nota, R$ 396,04 de compra saíram com CBS zero. Muitos desses produtos já não pagam PIS e Cofins hoje.</li>
+<li><strong>O resto depende da alíquota:</strong> a do Senado só sai até 15/12. Com uma alíquota parecida com o que se paga hoje, o preço muda pouco. Com uma mais alta, ele sobe nos itens de alíquota cheia, como o leite condensado e o creme de leite da nota.</li>
+<li><strong>De 2029 a 2032:</strong> o ICMS vai caindo e o IBS vai subindo. A mudança maior no preço vem aos poucos, até o sistema novo ficar completo em 2033.</li>
+<li><strong>E a margem do mercado?</strong> O imposto que o mercado paga na compra volta como crédito. Se ele calcular a margem sobre o custo com o imposto dentro, cobra margem sobre imposto e o preço sobe sem motivo. O certo é calcular a margem sobre o custo sem imposto e somar a CBS no fim.</li>
+</ul></div>
+<div class="card"><h3>🧮 Para o contador: o que é fácil e o que dá trabalho</h3><ul class="conta">
+<li><strong>Fácil, a conta:</strong> o sistema da nota calcula a CBS item por item e devolve o motivo com o artigo da lei. Os 121 itens desta nota rodaram no programa da Receita em menos de um segundo.</li>
+<li><strong>Fácil, conferir:</strong> o contador roda as vendas do cliente no programa aberto da Receita e vê se o sistema da loja calculou igual.</li>
+<li><strong>Trabalhoso, classificar cada produto:</strong> só nesta nota apareceram três armadilhas. O código do frango que usamos primeiro não existe mais em 2027. Milho e ervilha em lata parecem ter a redução, mas não têm, por causa do sal. Pão de alho e gelatina caem em códigos ligados à cesta, mas a regra vale só para pão francês e fórmula infantil. Um mercado tem milhares de produtos.</li>
+<li><strong>Trabalhoso, a transição:</strong> de 2027 a 2032 convivem a CBS, o ICMS e o IBS subindo aos poucos. São dois jeitos de calcular ao mesmo tempo.</li>
+<li><strong>Trabalhoso, o Simples Nacional:</strong> o cliente do Simples pode pagar a CBS e o IBS dentro do Simples ou por fora. Por fora pode valer para quem vende para outras empresas, que aproveitam o crédito. É uma conta por cliente.</li>
+</ul></div>
+</div>
+<p>Resumindo: 2026 e 2027 dão bastante trabalho, principalmente no cadastro dos produtos. Depois a regra fica uma só, com crédito amplo, e o dia a dia tende a ser mais simples que o PIS e a Cofins de hoje. O teste da planilha do kit mostra, item por item, onde o sistema da loja calculou diferente do programa da Receita.</p>
+<p class="fonte">As três armadilhas saíram da nota do exemplo acima, rodada em 24/11/2026 com a versão 1.7.2 do programa da Receita. O que pode acontecer com o preço é uma leitura das regras da lei, não uma previsão: cada loja decide o próprio preço.</p>
 </div></section>
 
 <!-- VIDEO: entra o explicavideo do projeto quando publicado (seção #video com embed 16:9) -->

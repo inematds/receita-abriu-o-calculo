@@ -178,7 +178,7 @@
 </span>
 <div class="links">
 <a class="sec" href="#notas">The two calculations</a>
-<a class="sec" href="#janeiro">In January</a>
+<a class="sec" href="#janeiro">In January</a><a class="sec" href="#preco">Price and accountant</a>
 <a class="sec" href="#acontecendo">What's happening</a>
 <a class="sec opt" href="#voce">For you</a>
 <a class="sec" href="#comecar">Check for yourself</a>
@@ -250,6 +250,30 @@
 <p>CBS isn't added on top of today's price: it replaces PIS and Cofins, which are already included in the R$ 1,512.15. The calculation shows how much of the purchase becomes CBS, with each tax named item by item.</p>
 <p class="fonte">The receipt doesn't include the products' tax code (NCM): INEMA selected a code for each one and checked its classification in the program's own table. We assumed a supermarket under the standard tax regime (the calculation is different under Simples Nacional) and used the value of each receipt line as the tax base. Both calculations also show R$ 0.70 in IBS, the 0.1% test rate for 2027. This is a simulation, not a tax receipt. Run on 11/24/2026, using version 1.7.2 of the Federal Revenue program; the program input and response are in the kit, at <a href="https://github.com/inematds/calculadora-da-reforma/tree/main/kit/exemplos" rel="noopener" target="_blank">kit/exemplos</a>.</p>
 </div>
+</div></section>
+<section id="preco"><div class="wrap">
+<span class="chip">Price and accounting</span>
+<h2>What changes in the price, <span class="amb">and the work of figuring it out</span></h2>
+<p class="sub">The same grocery receipt from the example above shows two things: where prices may change and where the accountant will spend time.</p>
+<figure style="margin:0 0 22px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><picture><source media="(max-width:600px)" srcset="../assets/preco-contador-vertical-en.jpg"/><img style="width:100%;display:block" alt="Price timeline: in 2027, PIS and Cofins end and CBS takes effect; from 2029 to 2032, ICMS decreases and IBS increases; in 2033, the new system is fully in place; and the 3 pitfalls found on the receipt: discontinued chicken code, preserved vegetables without the reduction because of the salt, and garlic bread that is not part of the basic food basket" src="../assets/preco-contador-en.jpg"/></picture></figure>
+<div class="grid g2">
+<div class="card"><h3>🛒 What may change in prices, and when</h3><ul class="conta">
+<li><strong>January 2027:</strong> PIS and Cofins end, and CBS takes their place. This is not an additional tax on top of the price; one tax is being replaced by another.</li>
+<li><strong>The basic food basket is likely to stay the same:</strong> on the receipt, R$ 396.04 worth of purchases had zero CBS. Many of these products already do not pay PIS and Cofins today.</li>
+<li><strong>The rest depends on the rate:</strong> the Senate's rate will only be announced by 12/15. If it is similar to what people pay today, prices will change little. If it is higher, prices will rise on full-rate items, such as the condensed milk and cream on the receipt.</li>
+<li><strong>From 2029 to 2032:</strong> ICMS gradually decreases and IBS gradually increases. The bigger price change comes gradually, until the new system is fully in place in 2033.</li>
+<li><strong>And the store's margin?</strong> The tax the store pays on purchases comes back as a credit. If the store calculates its margin on a cost that includes the tax, it charges a margin on the tax and the price rises for no reason. The right approach is to calculate the margin on the cost without tax and add CBS at the end.</li>
+</ul></div>
+<div class="card"><h3>🧮 For accountants: what is easy and what takes work</h3><ul class="conta">
+<li><strong>Easy—the calculation:</strong> the receipt system calculates CBS item by item and gives the reason along with the relevant article of law. The 121 items on this receipt ran through Brazil's Federal Revenue program in less than a second.</li>
+<li><strong>Easy—checking:</strong> the accountant runs the client's sales through the Federal Revenue's public program and checks whether the store's system calculated the same amounts.</li>
+<li><strong>Time-consuming—classifying each product:</strong> three pitfalls showed up on this receipt alone. The chicken code we first used will no longer exist in 2027. Canned corn and peas seem to qualify for the reduction, but they do not because of the salt. Garlic bread and gelatin fall under codes linked to the basic food basket, but the rule applies only to French bread and infant formula. A grocery store has thousands of products.</li>
+<li><strong>Time-consuming—the transition:</strong> from 2027 to 2032, CBS, ICMS, and IBS will coexist, with IBS gradually increasing. That means two calculation methods at the same time.</li>
+<li><strong>Time-consuming—Simples Nacional:</strong> a Simples Nacional client can pay CBS and IBS within Simples Nacional or separately. Paying separately may be worthwhile for businesses that sell to other companies, which can use the credit. It is a calculation for each client.</li>
+</ul></div>
+</div>
+<p>In short: 2026 and 2027 will take a lot of work, especially getting product records right. After that, there will be just one rule, with broad credits, and day-to-day work should be simpler than with today's PIS and Cofins. The kit's spreadsheet test shows, item by item, where the store's system calculated a different amount from the Federal Revenue program.</p>
+<p class="fonte">The three pitfalls came from the receipt in the example above, run on 11/24/2026 with version 1.7.2 of the Federal Revenue program. What may happen to prices is an interpretation of the law's rules, not a forecast: each store sets its own prices.</p>
 </div></section>
 
 <!-- VIDEO: the project's explainer video will go here once published (section #video with 16:9 embed) -->
